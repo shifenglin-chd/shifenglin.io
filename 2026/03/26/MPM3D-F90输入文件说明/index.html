@@ -487,7 +487,7 @@
         <div class="label text-third-text-color text-sm">Categories</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/shifenglin.io/archives">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">3</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">5</div>
         <div class="label text-third-text-color text-sm">Posts</div>
     </a>
 </div>
@@ -602,49 +602,70 @@
 
 		<div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
 			<hr>
-<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><h3 id="目的"><a href="#目的" class="headerlink" title="目的"></a>目的</h3><ul>
-<li><p>用于查询 <strong>MPM3D-F90</strong> 输入文件关键词</p>
-</li>
-<li><p>作为后续新增关键词与使用说明的统一记录入口</p>
-</li>
-<li><p>quick index 和 detail message</p>
-</li>
-</ul>
-<h3 id="关键词类型"><a href="#关键词类型" class="headerlink" title="关键词类型"></a>关键词类型</h3><p>输入关键词可按形式分为三类：</p>
+<h2 id="前言">前言</h2>
+<h3 id="目的">目的</h3>
 <ul>
-<li><p><strong>开关型</strong>：无参数<br>  例如：<code>smoo</code></p>
+<li>
+<p>用于查询 <strong>MPM3D-F90</strong> 输入文件关键词</p>
 </li>
-<li><p><strong>单参数型</strong>：一个参数<br>  例如：<code>dtscale 0.8</code></p>
+<li>
+<p>作为后续新增关键词与使用说明的统一记录入口</p>
 </li>
-<li><p><strong>多参数型</strong>：多个参数<br>  例如：<code>spx 0 10</code></p>
+<li>
+<p>quick index 和 detail message</p>
 </li>
 </ul>
-<h3 id="说明方式"><a href="#说明方式" class="headerlink" title="说明方式"></a>说明方式</h3><p>每一部分均尽量保持统一结构：</p>
+<h3 id="关键词类型">关键词类型</h3>
+<p>输入关键词可按形式分为三类：</p>
+<ul>
+<li>
+<p><strong>开关型</strong>：无参数<br>
+例如：<code>smoo</code></p>
+</li>
+<li>
+<p><strong>单参数型</strong>：一个参数<br>
+例如：<code>dtscale 0.8</code></p>
+</li>
+<li>
+<p><strong>多参数型</strong>：多个参数<br>
+例如：<code>spx 0 10</code></p>
+</li>
+</ul>
+<h3 id="说明方式">说明方式</h3>
+<p>每一部分均尽量保持统一结构：</p>
 <ol>
-<li><p><strong>输入模板</strong></p>
+<li>
+<p><strong>输入模板</strong></p>
 </li>
-<li><p><strong>输入示例</strong></p>
+<li>
+<p><strong>输入示例</strong></p>
 </li>
-<li><p><strong>关键词表</strong></p>
+<li>
+<p><strong>关键词表</strong></p>
 </li>
-<li><p><strong>必要备注</strong></p>
+<li>
+<p><strong>必要备注</strong></p>
 </li>
 </ol>
 <hr>
-<h1 id="🔎-快速索引（Quick-Index）"><a href="#🔎-快速索引（Quick-Index）" class="headerlink" title="🔎 快速索引（Quick Index）"></a>🔎 快速索引（Quick Index）</h1><blockquote>
-<p>用于快速查找关键词所属模块及基本含义。<br>详细解释见后续各模块。</p>
+<h1>🔎 快速索引（Quick Index）</h1>
+<blockquote>
+<p>用于快速查找关键词所属模块及基本含义。<br>
+详细解释见后续各模块。</p>
 </blockquote>
 <hr>
-<h2 id="1-基本控制"><a href="#1-基本控制" class="headerlink" title="1. 基本控制"></a>1. 基本控制</h2><table>
+<h2 id="1-基本控制">1. 基本控制</h2>
+<table>
 <thead>
 <tr>
 <th>关键词</th>
 <th>含义</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><code>mpm3</code></td>
-<td>标题 &#x2F; 算例名称</td>
+<td>标题 / 算例名称</td>
 </tr>
 <tr>
 <td><code>nbco</code></td>
@@ -662,16 +683,19 @@
 <td><code>nmat</code></td>
 <td>材料数量</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <hr>
-<h2 id="2-计算域与网格"><a href="#2-计算域与网格" class="headerlink" title="2. 计算域与网格"></a>2. 计算域与网格</h2><table>
+<h2 id="2-计算域与网格">2. 计算域与网格</h2>
+<table>
 <thead>
 <tr>
 <th>关键词</th>
 <th>含义</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><code>spx / spy / spz</code></td>
 <td>三个方向的计算域范围</td>
 </tr>
@@ -685,18 +709,21 @@
 </tr>
 <tr>
 <td><code>pt2d</code></td>
-<td>二维显示窗口 &#x2F; 粒子筛选区域</td>
+<td>二维显示窗口 / 粒子筛选区域</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <hr>
-<h2 id="3-时间控制"><a href="#3-时间控制" class="headerlink" title="3. 时间控制"></a>3. 时间控制</h2><table>
+<h2 id="3-时间控制">3. 时间控制</h2>
+<table>
 <thead>
 <tr>
 <th>关键词</th>
 <th>含义</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><code>dtscale</code></td>
 <td>时间步缩放</td>
 </tr>
@@ -712,16 +739,19 @@
 <td><code>rpttime</code></td>
 <td>日志输出间隔</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <hr>
-<h2 id="4-数值方法"><a href="#4-数值方法" class="headerlink" title="4. 数值方法"></a>4. 数值方法</h2><table>
+<h2 id="4-数值方法">4. 数值方法</h2>
+<table>
 <thead>
 <tr>
 <th>关键词</th>
 <th>含义</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><code>usf / usl / musl</code></td>
 <td>时间推进格式</td>
 </tr>
@@ -731,7 +761,7 @@
 </tr>
 <tr>
 <td><code>gimp / bimp / sgmp</code></td>
-<td>插值&#x2F;形函数相关设置</td>
+<td>插值/形函数相关设置</td>
 </tr>
 <tr>
 <td><code>jaum</code></td>
@@ -741,16 +771,19 @@
 <td><code>bulk</code></td>
 <td>人工体黏性</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <hr>
-<h2 id="5-输出控制"><a href="#5-输出控制" class="headerlink" title="5. 输出控制"></a>5. 输出控制</h2><table>
+<h2 id="5-输出控制">5. 输出控制</h2>
+<table>
 <thead>
 <tr>
 <th>关键词</th>
 <th>含义</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><code>para</code></td>
 <td>ParaView 输出</td>
 </tr>
@@ -760,7 +793,7 @@
 </tr>
 <tr>
 <td><code>outr</code></td>
-<td>动画&#x2F;结果输出变量选择</td>
+<td>动画/结果输出变量选择</td>
 </tr>
 <tr>
 <td><code>curv</code></td>
@@ -770,29 +803,35 @@
 <td><code>curx</code></td>
 <td>空间点时程曲线</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <hr>
-<h2 id="6-边界条件"><a href="#6-边界条件" class="headerlink" title="6. 边界条件"></a>6. 边界条件</h2><table>
+<h2 id="6-边界条件">6. 边界条件</h2>
+<table>
 <thead>
 <tr>
 <th>关键词</th>
 <th>含义</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><code>fixed</code></td>
 <td>网格边界条件</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <hr>
-<h2 id="7-材料与本构"><a href="#7-材料与本构" class="headerlink" title="7. 材料与本构"></a>7. 材料与本构</h2><table>
+<h2 id="7-材料与本构">7. 材料与本构</h2>
+<table>
 <thead>
 <tr>
 <th>关键词</th>
 <th>含义</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><code>material</code></td>
 <td>材料定义块</td>
 </tr>
@@ -824,29 +863,35 @@
 <td><code>noeh</code></td>
 <td>Neo-Hookean</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <hr>
-<h2 id="8-状态方程（EOS）"><a href="#8-状态方程（EOS）" class="headerlink" title="8. 状态方程（EOS）"></a>8. 状态方程（EOS）</h2><table>
+<h2 id="8-状态方程（EOS）">8. 状态方程（EOS）</h2>
+<table>
 <thead>
 <tr>
 <th>关键词</th>
 <th>含义</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><code>seos</code></td>
 <td>状态方程定义</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <hr>
-<h2 id="9-粒子定义"><a href="#9-粒子定义" class="headerlink" title="9. 粒子定义"></a>9. 粒子定义</h2><table>
+<h2 id="9-粒子定义">9. 粒子定义</h2>
+<table>
 <thead>
 <tr>
 <th>关键词</th>
 <th>含义</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><code>Particle block</code></td>
 <td>规则块生成粒子</td>
 </tr>
@@ -854,16 +899,19 @@
 <td><code>Particle point</code></td>
 <td>外部粒子数据导入</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <hr>
-<h2 id="10-初始条件：荷载"><a href="#10-初始条件：荷载" class="headerlink" title="10. 初始条件：荷载"></a>10. 初始条件：荷载</h2><table>
+<h2 id="10-初始条件：荷载">10. 初始条件：荷载</h2>
+<table>
 <thead>
 <tr>
 <th>关键词</th>
 <th>含义</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><code>load</code></td>
 <td>外力定义块开始</td>
 </tr>
@@ -883,16 +931,19 @@
 <td><code>endl</code></td>
 <td>外力定义结束</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <hr>
-<h2 id="11-初始条件：速度"><a href="#11-初始条件：速度" class="headerlink" title="11. 初始条件：速度"></a>11. 初始条件：速度</h2><table>
+<h2 id="11-初始条件：速度">11. 初始条件：速度</h2>
+<table>
 <thead>
 <tr>
 <th>关键词</th>
 <th>含义</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><code>velo</code></td>
 <td>初始速度定义块开始</td>
 </tr>
@@ -916,18 +967,21 @@
 <td><code>endv</code></td>
 <td>初始速度定义结束</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <hr>
-<h2 id="12-扩展关键词"><a href="#12-扩展关键词" class="headerlink" title="12. 扩展关键词"></a>12. 扩展关键词</h2><table>
+<h2 id="12-扩展关键词">12. 扩展关键词</h2>
+<table>
 <thead>
 <tr>
 <th>关键词</th>
 <th>含义</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><code>mpm3</code></td>
-<td>标题 &#x2F; 算例名称</td>
+<td>标题 / 算例名称</td>
 </tr>
 <tr>
 <td><code>TLmp</code></td>
@@ -935,7 +989,7 @@
 </tr>
 <tr>
 <td><code>fbar</code></td>
-<td>F-bar 应力光滑 &#x2F; 体积锁定修正</td>
+<td>F-bar 应力光滑 / 体积锁定修正</td>
 </tr>
 <tr>
 <td><code>deto</code></td>
@@ -953,36 +1007,43 @@
 <td><code>drda</code></td>
 <td>动力松弛阻尼</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <hr>
-<h2 id="13-结束标志"><a href="#13-结束标志" class="headerlink" title="13. 结束标志"></a>13. 结束标志</h2><table>
+<h2 id="13-结束标志">13. 结束标志</h2>
+<table>
 <thead>
 <tr>
 <th>关键词</th>
 <th>含义</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><code>endi</code></td>
 <td>输入文件结束</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <hr>
-<h1 id="0-文件结构（执行顺序）"><a href="#0-文件结构（执行顺序）" class="headerlink" title="0. 文件结构（执行顺序）"></a>0. 文件结构（执行顺序）</h1><div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">基本控制 → 计算域 → 时间 → 数值选项</span><br><span class="line">→ 输出 → 边界 → 材料 → 粒子 → 载荷 → 结束</span><br></pre></td></tr></table></figure></div>
-
+<h1>0. 文件结构（执行顺序）</h1>
+<div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">基本控制 → 计算域 → 时间 → 数值选项</span><br><span class="line">→ 输出 → 边界 → 材料 → 粒子 → 载荷 → 结束</span><br></pre></td></tr></table></figure></div>
 <hr>
-<h1 id="1-基本控制-1"><a href="#1-基本控制-1" class="headerlink" title="1. 基本控制"></a>1. 基本控制</h1><h2 id="输入模板"><a href="#输入模板" class="headerlink" title="输入模板"></a>输入模板</h2><div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">mpm3 tiltle</span><br><span class="line">nbco n</span><br><span class="line">nbbo n</span><br><span class="line">nbmp n</span><br><span class="line">nmat n</span><br></pre></td></tr></table></figure></div>
-
-<h2 id="输入示例"><a href="#输入示例" class="headerlink" title="输入示例"></a>输入示例</h2><div class="code-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">mpm3 *** DamBreak</span><br><span class="line">nbco 1</span><br><span class="line">nbbo 1</span><br><span class="line">nbmp 23072</span><br><span class="line">nmat 1</span><br></pre></td></tr></table></figure></div>
-
-<h2 id="关键词表"><a href="#关键词表" class="headerlink" title="关键词表"></a>关键词表</h2><table>
+<h1>1. 基本控制</h1>
+<h2 id="输入模板">输入模板</h2>
+<div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">mpm3 tiltle</span><br><span class="line">nbco n</span><br><span class="line">nbbo n</span><br><span class="line">nbmp n</span><br><span class="line">nmat n</span><br></pre></td></tr></table></figure></div>
+<h2 id="输入示例">输入示例</h2>
+<div class="code-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">mpm3 *** DamBreak</span><br><span class="line">nbco 1</span><br><span class="line">nbbo 1</span><br><span class="line">nbmp 23072</span><br><span class="line">nmat 1</span><br></pre></td></tr></table></figure></div>
+<h2 id="关键词表">关键词表</h2>
+<table>
 <thead>
 <tr>
 <th>关键词</th>
 <th>含义</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><code>mpm3</code></td>
 <td>在代码中对应 title 字段，用于读取输入文件开头的算例说明文字，本身不控制数值计算。</td>
 </tr>
@@ -1002,21 +1063,24 @@
 <td><code>nmat</code></td>
 <td>材料数量</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <hr>
-<h1 id="2-计算域与网格-1"><a href="#2-计算域与网格-1" class="headerlink" title="2. 计算域与网格"></a>2. 计算域与网格</h1><h2 id="输入模板-1：分方向定义"><a href="#输入模板-1：分方向定义" class="headerlink" title="输入模板 1：分方向定义"></a>输入模板 1：分方向定义</h2><div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">spx Xmin Xmax</span><br><span class="line">spy Ymin Ymax</span><br><span class="line">spz Zmin Zmax</span><br><span class="line">dcell h</span><br></pre></td></tr></table></figure></div>
-
-<h2 id="输入示例-1"><a href="#输入示例-1" class="headerlink" title="输入示例"></a>输入示例</h2><div class="code-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">spx   -0.5   48.5</span><br><span class="line">spy   -0.5   61</span><br><span class="line">spz   -0.5   0.5</span><br><span class="line">dcell 0.5</span><br></pre></td></tr></table></figure></div>
-
-<h2 id="输入模板-2：整体定义"><a href="#输入模板-2：整体定义" class="headerlink" title="输入模板 2：整体定义"></a>输入模板 2：整体定义</h2><div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grid Xmin Xmax Ymin Ymax Zmin Zmax</span><br></pre></td></tr></table></figure></div>
-
-<h2 id="输入示例-2"><a href="#输入示例-2" class="headerlink" title="输入示例"></a>输入示例</h2><div class="code-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grid 0 4.125   0 2.125   0 0.125</span><br></pre></td></tr></table></figure></div>
-
-<h2 id="输入模板-3：显示-输出筛选窗口"><a href="#输入模板-3：显示-输出筛选窗口" class="headerlink" title="输入模板 3：显示&#x2F;输出筛选窗口"></a>输入模板 3：显示&#x2F;输出筛选窗口</h2><div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pt2d Xmin Xmax Ymin Ymax Zmin Zmax</span><br></pre></td></tr></table></figure></div>
-
-<h2 id="输入示例-3"><a href="#输入示例-3" class="headerlink" title="输入示例"></a>输入示例</h2><div class="code-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pt2d 0 4 0 2 0 0.1</span><br></pre></td></tr></table></figure></div>
-
-<h2 id="关键词表-1"><a href="#关键词表-1" class="headerlink" title="关键词表"></a>关键词表</h2><table>
+<h1>2. 计算域与网格</h1>
+<h2 id="输入模板-1：分方向定义">输入模板 1：分方向定义</h2>
+<div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">spx Xmin Xmax</span><br><span class="line">spy Ymin Ymax</span><br><span class="line">spz Zmin Zmax</span><br><span class="line">dcell h</span><br></pre></td></tr></table></figure></div>
+<h2 id="输入示例-2">输入示例</h2>
+<div class="code-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">spx   -0.5   48.5</span><br><span class="line">spy   -0.5   61</span><br><span class="line">spz   -0.5   0.5</span><br><span class="line">dcell 0.5</span><br></pre></td></tr></table></figure></div>
+<h2 id="输入模板-2：整体定义">输入模板 2：整体定义</h2>
+<div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grid Xmin Xmax Ymin Ymax Zmin Zmax</span><br></pre></td></tr></table></figure></div>
+<h2 id="输入示例-3">输入示例</h2>
+<div class="code-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grid 0 4.125   0 2.125   0 0.125</span><br></pre></td></tr></table></figure></div>
+<h2 id="输入模板-3：显示-输出筛选窗口">输入模板 3：显示/输出筛选窗口</h2>
+<div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pt2d Xmin Xmax Ymin Ymax Zmin Zmax</span><br></pre></td></tr></table></figure></div>
+<h2 id="输入示例-4">输入示例</h2>
+<div class="code-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pt2d 0 4 0 2 0 0.1</span><br></pre></td></tr></table></figure></div>
+<h2 id="关键词表-2">关键词表</h2>
+<table>
 <thead>
 <tr>
 <th>关键词</th>
@@ -1024,7 +1088,8 @@
 <th>备注</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><code>spx/spy/spz</code></td>
 <td>计算域范围</td>
 <td></td>
@@ -1036,7 +1101,7 @@
 </tr>
 <tr>
 <td><code>pt2d</code></td>
-<td>二维显示窗口 &#x2F; 粒子筛选区域</td>
+<td>二维显示窗口 / 粒子筛选区域</td>
 <td>代码中用于设置一个 3D 包围盒范围，仅输出或显示该范围内粒子，便于把 3D 结果按 2D 截面方式观察。</td>
 </tr>
 <tr>
@@ -1044,13 +1109,16 @@
 <td>计算域整体定义</td>
 <td>用一条关键词同时定义 <code>spx, spy, spz</code> 三个方向的计算域范围，是 <code>spx/spy/spz</code> 的集中写法。</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <hr>
-<h1 id="3-时间控制-1"><a href="#3-时间控制-1" class="headerlink" title="3. 时间控制"></a>3. 时间控制</h1><h2 id="输入模板-1"><a href="#输入模板-1" class="headerlink" title="输入模板"></a>输入模板</h2><div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">dtscale α</span><br><span class="line">endtime t</span><br><span class="line">outtime Δt_out</span><br><span class="line">rpttime Δt_log</span><br></pre></td></tr></table></figure></div>
-
-<h2 id="输入示例-4"><a href="#输入示例-4" class="headerlink" title="输入示例"></a>输入示例</h2><div class="code-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">dtscale 0.8</span><br><span class="line">endtime 30</span><br><span class="line">outtime 5</span><br><span class="line">rpttime 0.5</span><br></pre></td></tr></table></figure></div>
-
-<h2 id="关键词表-2"><a href="#关键词表-2" class="headerlink" title="关键词表"></a>关键词表</h2><table>
+<h1>3. 时间控制</h1>
+<h2 id="输入模板-2">输入模板</h2>
+<div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">dtscale α</span><br><span class="line">endtime t</span><br><span class="line">outtime Δt_out</span><br><span class="line">rpttime Δt_log</span><br></pre></td></tr></table></figure></div>
+<h2 id="输入示例-5">输入示例</h2>
+<div class="code-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">dtscale 0.8</span><br><span class="line">endtime 30</span><br><span class="line">outtime 5</span><br><span class="line">rpttime 0.5</span><br></pre></td></tr></table></figure></div>
+<h2 id="关键词表-3">关键词表</h2>
+<table>
 <thead>
 <tr>
 <th>关键词</th>
@@ -1058,7 +1126,8 @@
 <th>含义</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><code>dtscale</code></td>
 <td>dtscale</td>
 <td>时间步缩放</td>
@@ -1078,18 +1147,23 @@
 <td>ReportTime</td>
 <td>日志输出间隔</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <hr>
-<h1 id="4-数值方法选项"><a href="#4-数值方法选项" class="headerlink" title="4. 数值方法选项"></a>4. 数值方法选项</h1><h2 id="4-1-时间推进"><a href="#4-1-时间推进" class="headerlink" title="4.1 时间推进"></a>4.1 时间推进</h2><h3 id="输入模板-2"><a href="#输入模板-2" class="headerlink" title="输入模板"></a>输入模板</h3><div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">usf on</span><br><span class="line">usl on</span><br><span class="line">musl on</span><br></pre></td></tr></table></figure></div>
-
-<h3 id="关键词表-3"><a href="#关键词表-3" class="headerlink" title="关键词表"></a>关键词表</h3><table>
+<h1>4. 数值方法选项</h1>
+<h2 id="4-1-时间推进">4.1 时间推进</h2>
+<h3 id="输入模板-3">输入模板</h3>
+<div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">usf on</span><br><span class="line">usl on</span><br><span class="line">musl on</span><br></pre></td></tr></table></figure></div>
+<h3 id="关键词表-4">关键词表</h3>
+<table>
 <thead>
 <tr>
 <th>关键词</th>
 <th>含义</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><code>usl</code></td>
 <td>Update Stress Last</td>
 </tr>
@@ -1101,56 +1175,79 @@
 <td><code>usf</code></td>
 <td>Update Stress First</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <hr>
-<h2 id="4-2-平滑"><a href="#4-2-平滑" class="headerlink" title="4.2 平滑"></a>4.2 平滑</h2><h3 id="输入模板-3"><a href="#输入模板-3" class="headerlink" title="输入模板"></a>输入模板</h3><div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">smoo</span><br></pre></td></tr></table></figure></div>
-
-<h3 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h3><ul>
-<li><p>启用粒子&#x2F;网格平滑（减少振荡）</p>
+<h2 id="4-2-平滑">4.2 平滑</h2>
+<h3 id="输入模板-4">输入模板</h3>
+<div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">smoo</span><br></pre></td></tr></table></figure></div>
+<h3 id="说明">说明</h3>
+<ul>
+<li>
+<p>启用粒子/网格平滑（减少振荡）</p>
 </li>
-<li><p>当前理解下，其主要表现为平滑效果，并未作为新的本构量直接带入下一步计算</p>
+<li>
+<p>当前理解下，其主要表现为平滑效果，并未作为新的本构量直接带入下一步计算</p>
 </li>
 </ul>
 <hr>
-<h2 id="4-3-形函数"><a href="#4-3-形函数" class="headerlink" title="4.3 形函数"></a>4.3 形函数</h2><h3 id="输入模板-4"><a href="#输入模板-4" class="headerlink" title="输入模板"></a>输入模板</h3><div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">gimp</span><br><span class="line">bimp</span><br><span class="line">sgmp</span><br></pre></td></tr></table></figure></div>
-
-<h3 id="说明-1"><a href="#说明-1" class="headerlink" title="说明"></a>说明</h3><ul>
-<li><p><code>gimp</code>：广义插值物质点</p>
+<h2 id="4-3-形函数">4.3 形函数</h2>
+<h3 id="输入模板-5">输入模板</h3>
+<div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">gimp</span><br><span class="line">bimp</span><br><span class="line">sgmp</span><br></pre></td></tr></table></figure></div>
+<h3 id="说明-2">说明</h3>
+<ul>
+<li>
+<p><code>gimp</code>：广义插值物质点</p>
 </li>
-<li><p><code>bimp</code>：B-spline</p>
+<li>
+<p><code>bimp</code>：B-spline</p>
 </li>
-<li><p><code>sgmp</code>：交错网格</p>
-</li>
-</ul>
-<hr>
-<h2 id="4-4-人工体黏性"><a href="#4-4-人工体黏性" class="headerlink" title="4.4 人工体黏性"></a>4.4 人工体黏性</h2><h3 id="输入模板-5"><a href="#输入模板-5" class="headerlink" title="输入模板"></a>输入模板</h3><div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bulk a b</span><br></pre></td></tr></table></figure></div>
-
-<h3 id="输入示例-5"><a href="#输入示例-5" class="headerlink" title="输入示例"></a>输入示例</h3><div class="code-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bulk 1.5 0.06</span><br></pre></td></tr></table></figure></div>
-
-<h3 id="源码对应"><a href="#源码对应" class="headerlink" title="源码对应"></a>源码对应</h3><div class="code-container" data-rel="Fortran"><figure class="iseeu highlight fortran"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">bq1 = a</span><br><span class="line">bq2 = b</span><br></pre></td></tr></table></figure></div>
-
-<h3 id="内部计算（Constitution-f90）"><a href="#内部计算（Constitution-f90）" class="headerlink" title="内部计算（Constitution.f90）"></a>内部计算（Constitution.f90）</h3><p>$$<br>q &#x3D; \rho (a L^2 \dot{\varepsilon}_v^2 - b L c \dot{\varepsilon}_v)<br>$$</p>
-<h3 id="说明-2"><a href="#说明-2" class="headerlink" title="说明"></a>说明</h3><ul>
-<li><p><code>a, b</code> 为人工黏性系数</p>
-</li>
-<li><p>用于抑制压缩过程中的数值振荡</p>
+<li>
+<p><code>sgmp</code>：交错网格</p>
 </li>
 </ul>
 <hr>
-<h2 id="4-5-Jaumann-应力率"><a href="#4-5-Jaumann-应力率" class="headerlink" title="4.5 Jaumann 应力率"></a>4.5 Jaumann 应力率</h2><h3 id="输入模板-6"><a href="#输入模板-6" class="headerlink" title="输入模板"></a>输入模板</h3><div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">jaum on</span><br></pre></td></tr></table></figure></div>
-
-<h3 id="说明-3"><a href="#说明-3" class="headerlink" title="说明"></a>说明</h3><ul>
-<li><p>启用 Jaumann 应力更新</p>
+<h2 id="4-4-人工体黏性">4.4 人工体黏性</h2>
+<h3 id="输入模板-6">输入模板</h3>
+<div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bulk a b</span><br></pre></td></tr></table></figure></div>
+<h3 id="输入示例-6">输入示例</h3>
+<div class="code-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bulk 1.5 0.06</span><br></pre></td></tr></table></figure></div>
+<h3 id="源码对应">源码对应</h3>
+<div class="code-container" data-rel="Fortran"><figure class="iseeu highlight fortran"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">bq1 = a</span><br><span class="line">bq2 = b</span><br></pre></td></tr></table></figure></div>
+<h3 id="内部计算（Constitution-f90）">内部计算（Constitution.f90）</h3>
+<p>$$<br>
+q = \rho (a L^2 \dot{\varepsilon}_v^2 - b L c \dot{\varepsilon}_v)<br>
+$$</p>
+<h3 id="说明-3">说明</h3>
+<ul>
+<li>
+<p><code>a, b</code> 为人工黏性系数</p>
 </li>
-<li><p>常用于小应变情况下转为客观应力率</p>
+<li>
+<p>用于抑制压缩过程中的数值振荡</p>
 </li>
 </ul>
 <hr>
-<h1 id="5-输出控制-1"><a href="#5-输出控制-1" class="headerlink" title="5. 输出控制"></a>5. 输出控制</h1><h2 id="输入模板-7"><a href="#输入模板-7" class="headerlink" title="输入模板"></a>输入模板</h2><div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">para</span><br><span class="line">tecp</span><br><span class="line">outr var</span><br><span class="line">curv 变量名 粒子编号</span><br><span class="line">curx 变量名 x y z</span><br></pre></td></tr></table></figure></div>
-
-<h2 id="输入示例-6"><a href="#输入示例-6" class="headerlink" title="输入示例"></a>输入示例</h2><div class="code-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">tecp</span><br><span class="line">outr pres</span><br><span class="line">curv disx 120</span><br><span class="line">curx vely 1 2 3</span><br></pre></td></tr></table></figure></div>
-
-<h2 id="关键词表-4"><a href="#关键词表-4" class="headerlink" title="关键词表"></a>关键词表</h2><table>
+<h2 id="4-5-Jaumann-应力率">4.5 Jaumann 应力率</h2>
+<h3 id="输入模板-7">输入模板</h3>
+<div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">jaum on</span><br></pre></td></tr></table></figure></div>
+<h3 id="说明-4">说明</h3>
+<ul>
+<li>
+<p>启用 Jaumann 应力更新</p>
+</li>
+<li>
+<p>常用于小应变情况下转为客观应力率</p>
+</li>
+</ul>
+<hr>
+<h1>5. 输出控制</h1>
+<h2 id="输入模板-8">输入模板</h2>
+<div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">para</span><br><span class="line">tecp</span><br><span class="line">outr var</span><br><span class="line">curv 变量名 粒子编号</span><br><span class="line">curx 变量名 x y z</span><br></pre></td></tr></table></figure></div>
+<h2 id="输入示例-7">输入示例</h2>
+<div class="code-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">tecp</span><br><span class="line">outr pres</span><br><span class="line">curv disx 120</span><br><span class="line">curx vely 1 2 3</span><br></pre></td></tr></table></figure></div>
+<h2 id="关键词表-5">关键词表</h2>
+<table>
 <thead>
 <tr>
 <th>关键词</th>
@@ -1158,7 +1255,8 @@
 <th>备注</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><code>para</code></td>
 <td>输出 ParaView 文件（.vtu）</td>
 <td>开启后生成 <code>.vtu + .pvd</code>，用于 ParaView 可视化，默认输出粒子场变量（如位移、速度、应力等）。</td>
@@ -1175,16 +1273,18 @@
 </tr>
 <tr>
 <td><code>outr</code></td>
-<td>动画&#x2F;结果输出变量选择</td>
-<td>定义哪些变量被写入 plot &#x2F; animation 文件；代码中对应 <code>AnimOption</code>，如 <code>pres</code>、<code>velx</code>、<code>damg</code> 等。</td>
+<td>动画/结果输出变量选择</td>
+<td>定义哪些变量被写入 plot / animation 文件；代码中对应 <code>AnimOption</code>，如 <code>pres</code>、<code>velx</code>、<code>damg</code> 等。</td>
 </tr>
 <tr>
 <td><code>curx</code></td>
 <td>按坐标定义曲线输出点</td>
 <td>与 <code>curv</code> 类似，但不是直接给粒子编号，而是输入空间坐标，由程序自动寻找最近粒子并输出其时程曲线。</td>
 </tr>
-</tbody></table>
-<h2 id="支持变量（来自-DataOut）"><a href="#支持变量（来自-DataOut）" class="headerlink" title="支持变量（来自 DataOut）"></a>支持变量（来自 DataOut）</h2><table>
+</tbody>
+</table>
+<h2 id="支持变量（来自-DataOut）">支持变量（来自 DataOut）</h2>
+<table>
 <thead>
 <tr>
 <th>编号</th>
@@ -1192,7 +1292,8 @@
 <th>对应代码</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>1</td>
 <td>seqv</td>
 <td>pt%seqv</td>
@@ -1267,23 +1368,27 @@
 <td>disz</td>
 <td>pt%Zp - pt%Zo</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <hr>
-<h1 id="6-边界条件-1"><a href="#6-边界条件-1" class="headerlink" title="6. 边界条件"></a>6. 边界条件</h1><h2 id="输入模板-8"><a href="#输入模板-8" class="headerlink" title="输入模板"></a>输入模板</h2><div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fixed x0 xn y0 yn z0 zn</span><br></pre></td></tr></table></figure></div>
-
+<h1>6. 边界条件</h1>
+<h2 id="输入模板-9">输入模板</h2>
+<div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fixed x0 xn y0 yn z0 zn</span><br></pre></td></tr></table></figure></div>
 <blockquote>
 <p>边界施加在网格节点</p>
 </blockquote>
-<h2 id="输入示例-7"><a href="#输入示例-7" class="headerlink" title="输入示例"></a>输入示例</h2><div class="code-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">!      x0  xn  y0  yn  z0 zn</span><br><span class="line">fixed  2   0   2   0   2   2</span><br></pre></td></tr></table></figure></div>
-
-<h2 id="数值含义表"><a href="#数值含义表" class="headerlink" title="数值含义表"></a>数值含义表</h2><table>
+<h2 id="输入示例-8">输入示例</h2>
+<div class="code-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">!      x0  xn  y0  yn  z0 zn</span><br><span class="line">fixed  2   0   2   0   2   2</span><br></pre></td></tr></table></figure></div>
+<h2 id="数值含义表">数值含义表</h2>
+<table>
 <thead>
 <tr>
 <th>值</th>
 <th>含义</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>0</td>
 <td>自由</td>
 </tr>
@@ -1295,104 +1400,115 @@
 <td>2</td>
 <td>对称（法向速度为 0）</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <hr>
-<h1 id="7-材料定义"><a href="#7-材料定义" class="headerlink" title="7. 材料定义"></a>7. 材料定义</h1><h2 id="7-1-基本格式"><a href="#7-1-基本格式" class="headerlink" title="7.1 基本格式"></a>7.1 基本格式</h2><h3 id="输入模板-9"><a href="#输入模板-9" class="headerlink" title="输入模板"></a>输入模板</h3><div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">material</span><br><span class="line">mID mtype parameters(...)</span><br></pre></td></tr></table></figure></div>
-
-<h3 id="输入示例-8"><a href="#输入示例-8" class="headerlink" title="输入示例"></a>输入示例</h3><div class="code-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">material</span><br><span class="line">!  num   mtype density young&#x27;s Poission qfai   kfai    qpsi tenf </span><br><span class="line">   1     dpm   2.1d3   0.7e8   0.3      0.3545 9.74d3  0.0  27.48d3</span><br></pre></td></tr></table></figure></div>
-
+<h1>7. 材料定义</h1>
+<h2 id="7-1-基本格式">7.1 基本格式</h2>
+<h3 id="输入模板-10">输入模板</h3>
+<div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">material</span><br><span class="line">mID mtype parameters(...)</span><br></pre></td></tr></table></figure></div>
+<h3 id="输入示例-9">输入示例</h3>
+<div class="code-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">material</span><br><span class="line">!  num   mtype density young&#x27;s Poission qfai   kfai    qpsi tenf </span><br><span class="line">   1     dpm   2.1d3   0.7e8   0.3      0.3545 9.74d3  0.0  27.48d3</span><br></pre></td></tr></table></figure></div>
 <hr>
-<h2 id="7-2-材料类型"><a href="#7-2-材料类型" class="headerlink" title="7.2 材料类型"></a>7.2 材料类型</h2><blockquote>
+<h2 id="7-2-材料类型">7.2 材料类型</h2>
+<blockquote>
 <p>材料模型关键词来自 <code>SetMaterial()</code></p>
 </blockquote>
 <table>
 <thead>
 <tr>
 <th>关键词</th>
-<th align="right">MatType</th>
+<th style="text-align:right">MatType</th>
 <th>含义</th>
 <th>需要的主要参数</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><code>elas</code></td>
-<td align="right">1</td>
+<td style="text-align:right">1</td>
 <td>线弹性</td>
 <td><code>density, Young, Poisson</code></td>
 </tr>
 <tr>
 <td><code>pla1</code></td>
-<td align="right">2</td>
+<td style="text-align:right">2</td>
 <td>弹性-理想塑性</td>
 <td><code>density, Young, Poisson, Yield0</code></td>
 </tr>
 <tr>
 <td><code>pla2</code></td>
-<td align="right">3</td>
+<td style="text-align:right">3</td>
 <td>弹性-各向同性硬化</td>
 <td><code>density, Young, Poisson, Yield0, TangMod</code></td>
 </tr>
 <tr>
 <td><code>john</code></td>
-<td align="right">4</td>
+<td style="text-align:right">4</td>
 <td>Johnson–Cook</td>
 <td><code>density, Young, Poisson, Yield0, B, n, C, m, roomt, melt, SpecHeat, epso</code></td>
 </tr>
 <tr>
 <td><code>sjc</code></td>
-<td align="right">5</td>
+<td style="text-align:right">5</td>
 <td>简化 Johnson–Cook</td>
 <td><code>density, Young, Poisson, Yield0, B, n, C, epso</code></td>
 </tr>
 <tr>
 <td><code>sjcf</code></td>
-<td align="right">6</td>
+<td style="text-align:right">6</td>
 <td>简化 JC + 失效</td>
 <td><code>density, Young, Poisson, Yield0, B, n, C, epso, epf</code></td>
 </tr>
 <tr>
 <td><code>jcf</code></td>
-<td align="right">7</td>
+<td style="text-align:right">7</td>
 <td>JC + fracture</td>
 <td><code>density, Young, Poisson, Yield0, B, n, C, m, roomt, melt, SpecHeat, epso, epf</code></td>
 </tr>
 <tr>
 <td><code>hiex</code></td>
-<td align="right">8</td>
+<td style="text-align:right">8</td>
 <td>高爆燃烧</td>
 <td><code>density, D</code></td>
 </tr>
 <tr>
 <td><code>null</code></td>
-<td align="right">9</td>
-<td>空气&#x2F;弱约束流体近似</td>
+<td style="text-align:right">9</td>
+<td>空气/弱约束流体近似</td>
 <td><code>density, Wavespd</code></td>
 </tr>
 <tr>
 <td><code>dpm</code></td>
-<td align="right">10</td>
+<td style="text-align:right">10</td>
 <td>Drucker–Prager</td>
 <td><code>density, Young, Poisson, q_fai, k_fai, q_psi, ten_f</code></td>
 </tr>
 <tr>
 <td><code>noeh</code></td>
-<td align="right">11</td>
+<td style="text-align:right">11</td>
 <td>NeoHookean model</td>
 <td><code>density, Yong, Poisson</code></td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <hr>
-<h2 id="7-3-状态方程（EOS）"><a href="#7-3-状态方程（EOS）" class="headerlink" title="7.3 状态方程（EOS）"></a>7.3 状态方程（EOS）</h2><h3 id="输入模板-10"><a href="#输入模板-10" class="headerlink" title="输入模板"></a>输入模板</h3><div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">seos mset EOSType ...</span><br></pre></td></tr></table></figure></div>
-
+<h2 id="7-3-状态方程（EOS）">7.3 状态方程（EOS）</h2>
+<h3 id="输入模板-11">输入模板</h3>
+<div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">seos mset EOSType ...</span><br></pre></td></tr></table></figure></div>
 <ul>
-<li><p><code>mset</code>：材料号</p>
+<li>
+<p><code>mset</code>：材料号</p>
 </li>
-<li><p><code>EOSType</code>：EOS 类型编号</p>
+<li>
+<p><code>EOSType</code>：EOS 类型编号</p>
 </li>
-<li><p>后面跟对应参数</p>
+<li>
+<p>后面跟对应参数</p>
 </li>
 </ul>
-<h3 id="关键词表-5"><a href="#关键词表-5" class="headerlink" title="关键词表"></a>关键词表</h3><table>
+<h3 id="关键词表-6">关键词表</h3>
+<table>
 <thead>
 <tr>
 <th>关键词</th>
@@ -1400,7 +1516,8 @@
 <th>参数结构</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><code>seos mset 1 ...</code></td>
 <td>Linear polynomial EOS</td>
 <td><code>c0, c1, c2, c3, c4, c5, c6, E0</code></td>
@@ -1420,20 +1537,25 @@
 <td>Weakly compressible EOS</td>
 <td><code>c</code>（numerical speed）</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <hr>
-<h1 id="8-粒子定义"><a href="#8-粒子定义" class="headerlink" title="8. 粒子定义"></a>8. 粒子定义</h1><h2 id="8-1-块定义"><a href="#8-1-块定义" class="headerlink" title="8.1 块定义"></a>8.1 块定义</h2><h3 id="输入模板-11"><a href="#输入模板-11" class="headerlink" title="输入模板"></a>输入模板</h3><div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Particle block n</span><br><span class="line">matID density dp x0 y0 z0 nx ny nz</span><br></pre></td></tr></table></figure></div>
-
-<h3 id="输入示例-9"><a href="#输入示例-9" class="headerlink" title="输入示例"></a>输入示例</h3><div class="code-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Particle block 1</span><br><span class="line">! matid density dp    0x 0y  0z   nx ny nz</span><br><span class="line">  1     997.5  0.025 0  0   0.05 40 80 1</span><br></pre></td></tr></table></figure></div>
-
-<h3 id="参数表"><a href="#参数表" class="headerlink" title="参数表"></a>参数表</h3><table>
+<h1>8. 粒子定义</h1>
+<h2 id="8-1-块定义">8.1 块定义</h2>
+<h3 id="输入模板-12">输入模板</h3>
+<div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Particle block n</span><br><span class="line">matID density dp x0 y0 z0 nx ny nz</span><br></pre></td></tr></table></figure></div>
+<h3 id="输入示例-10">输入示例</h3>
+<div class="code-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Particle block 1</span><br><span class="line">! matid density dp    0x 0y  0z   nx ny nz</span><br><span class="line">  1     997.5  0.025 0  0   0.05 40 80 1</span><br></pre></td></tr></table></figure></div>
+<h3 id="参数表">参数表</h3>
+<table>
 <thead>
 <tr>
 <th>参数</th>
 <th>含义</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><code>dp</code></td>
 <td>粒子间距</td>
 </tr>
@@ -1445,34 +1567,44 @@
 <td><code>nx, ny, nz</code></td>
 <td>粒子数</td>
 </tr>
-</tbody></table>
-<h3 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h3><div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">定义分辨率，划分网格 —— 生成粒子</span><br><span class="line">总粒子数 = nx × ny × nz</span><br></pre></td></tr></table></figure></div>
-
+</tbody>
+</table>
+<h3 id="备注">备注</h3>
+<div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">定义分辨率，划分网格 —— 生成粒子</span><br><span class="line">总粒子数 = nx × ny × nz</span><br></pre></td></tr></table></figure></div>
 <hr>
-<h2 id="8-2-外部生成粒子"><a href="#8-2-外部生成粒子" class="headerlink" title="8.2 外部生成粒子"></a>8.2 外部生成粒子</h2><h3 id="说明-4"><a href="#说明-4" class="headerlink" title="说明"></a>说明</h3><ul>
-<li><p>可利用脚本依据 DEM（数字高程）数据定义：</p>
+<h2 id="8-2-外部生成粒子">8.2 外部生成粒子</h2>
+<h3 id="说明-5">说明</h3>
 <ul>
-<li><p>网格分辨率（dcell）</p>
+<li>
+<p>可利用脚本依据 DEM（数字高程）数据定义：</p>
+<ul>
+<li>
+<p>网格分辨率（dcell）</p>
 </li>
-<li><p>粒子分辨率（particle per cell）</p>
+<li>
+<p>粒子分辨率（particle per cell）</p>
 </li>
 </ul>
 </li>
-<li><p>再生成粒子数据文件导入</p>
+<li>
+<p>再生成粒子数据文件导入</p>
 </li>
 </ul>
-<h3 id="输入模板-12"><a href="#输入模板-12" class="headerlink" title="输入模板"></a>输入模板</h3><div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Particle point body_num total_particle_num</span><br><span class="line">ID material_num mass x y z</span><br></pre></td></tr></table></figure></div>
-
-<h3 id="输入示例-10"><a href="#输入示例-10" class="headerlink" title="输入示例"></a>输入示例</h3><div class="code-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Particle point 1 5776</span><br><span class="line">!ID  mtype  mass      x     y     z</span><br><span class="line">1    1      0.249307  0.25  0.25  0</span><br><span class="line">2    1      0.249307  0.25  0.75  0</span><br><span class="line">3    1      0.249307  0.75  0.75  0</span><br><span class="line">4    1      0.249307  0.25  1.25  0</span><br><span class="line">5    1      0.249307  0.75  1.25  0</span><br></pre></td></tr></table></figure></div>
-
+<h3 id="输入模板-13">输入模板</h3>
+<div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Particle point body_num total_particle_num</span><br><span class="line">ID material_num mass x y z</span><br></pre></td></tr></table></figure></div>
+<h3 id="输入示例-11">输入示例</h3>
+<div class="code-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Particle point 1 5776</span><br><span class="line">!ID  mtype  mass      x     y     z</span><br><span class="line">1    1      0.249307  0.25  0.25  0</span><br><span class="line">2    1      0.249307  0.25  0.75  0</span><br><span class="line">3    1      0.249307  0.75  0.75  0</span><br><span class="line">4    1      0.249307  0.25  1.25  0</span><br><span class="line">5    1      0.249307  0.75  1.25  0</span><br></pre></td></tr></table></figure></div>
 <hr>
-<h1 id="9-初始条件"><a href="#9-初始条件" class="headerlink" title="9. 初始条件"></a>9. 初始条件</h1><blockquote>
+<h1>9. 初始条件</h1>
+<blockquote>
 <p>当前主要包含 <strong>荷载</strong> 和 <strong>速度</strong></p>
 </blockquote>
 <hr>
-<h2 id="9-1-外力"><a href="#9-1-外力" class="headerlink" title="9.1 外力"></a>9.1 外力</h2><h3 id="输入模板-13"><a href="#输入模板-13" class="headerlink" title="输入模板"></a>输入模板</h3><div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">load</span><br><span class="line">...</span><br><span class="line">endl</span><br></pre></td></tr></table></figure></div>
-
-<h3 id="关键词表-6"><a href="#关键词表-6" class="headerlink" title="关键词表"></a>关键词表</h3><table>
+<h2 id="9-1-外力">9.1 外力</h2>
+<h3 id="输入模板-14">输入模板</h3>
+<div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">load</span><br><span class="line">...</span><br><span class="line">endl</span><br></pre></td></tr></table></figure></div>
+<h3 id="关键词表-7">关键词表</h3>
+<table>
 <thead>
 <tr>
 <th>关键词</th>
@@ -1480,10 +1612,11 @@
 <th>备注</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><code>load</code></td>
 <td>外力定义模块开始</td>
-<td>进入外力&#x2F;重力设置区域，需与 <code>endl</code> 成对使用。</td>
+<td>进入外力/重力设置区域，需与 <code>endl</code> 成对使用。</td>
 </tr>
 <tr>
 <td><code>part</code></td>
@@ -1505,17 +1638,21 @@
 <td>外力定义结束</td>
 <td>结束 <code>load</code> 模块。</td>
 </tr>
-</tbody></table>
-<h3 id="输入示例-11"><a href="#输入示例-11" class="headerlink" title="输入示例"></a>输入示例</h3><h4 id="重力载荷"><a href="#重力载荷" class="headerlink" title="重力载荷"></a>重力载荷</h4><div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">load</span><br><span class="line">grav 1 0 -9.81 0</span><br><span class="line">endl</span><br></pre></td></tr></table></figure></div>
-
-<h4 id="对整个-body-施加统一外力"><a href="#对整个-body-施加统一外力" class="headerlink" title="对整个 body 施加统一外力"></a>对整个 body 施加统一外力</h4><div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">load</span><br><span class="line">body 1 1000 0 0</span><br><span class="line">endl</span><br></pre></td></tr></table></figure></div>
-
-<h4 id="对单个粒子施加外力"><a href="#对单个粒子施加外力" class="headerlink" title="对单个粒子施加外力"></a>对单个粒子施加外力</h4><div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">load</span><br><span class="line">part 10 100 0 0</span><br><span class="line">endl</span><br></pre></td></tr></table></figure></div>
-
+</tbody>
+</table>
+<h3 id="输入示例-12">输入示例</h3>
+<h4 id="重力载荷">重力载荷</h4>
+<div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">load</span><br><span class="line">grav 1 0 -9.81 0</span><br><span class="line">endl</span><br></pre></td></tr></table></figure></div>
+<h4 id="对整个-body-施加统一外力">对整个 body 施加统一外力</h4>
+<div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">load</span><br><span class="line">body 1 1000 0 0</span><br><span class="line">endl</span><br></pre></td></tr></table></figure></div>
+<h4 id="对单个粒子施加外力">对单个粒子施加外力</h4>
+<div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">load</span><br><span class="line">part 10 100 0 0</span><br><span class="line">endl</span><br></pre></td></tr></table></figure></div>
 <hr>
-<h2 id="9-2-初始速度"><a href="#9-2-初始速度" class="headerlink" title="9.2 初始速度"></a>9.2 初始速度</h2><h3 id="输入模板-14"><a href="#输入模板-14" class="headerlink" title="输入模板"></a>输入模板</h3><div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">velo</span><br><span class="line">...</span><br><span class="line">endv</span><br></pre></td></tr></table></figure></div>
-
-<h3 id="关键词表-7"><a href="#关键词表-7" class="headerlink" title="关键词表"></a>关键词表</h3><table>
+<h2 id="9-2-初始速度">9.2 初始速度</h2>
+<h3 id="输入模板-15">输入模板</h3>
+<div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">velo</span><br><span class="line">...</span><br><span class="line">endv</span><br></pre></td></tr></table></figure></div>
+<h3 id="关键词表-8">关键词表</h3>
+<table>
 <thead>
 <tr>
 <th>关键词</th>
@@ -1523,7 +1660,8 @@
 <th>备注</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><code>velo</code></td>
 <td>初始速度定义模块开始</td>
 <td>进入初始速度设置区域，需与 <code>endv</code> 成对使用。</td>
@@ -1553,18 +1691,22 @@
 <td>初始速度定义结束</td>
 <td>结束 <code>velo</code> 模块。</td>
 </tr>
-</tbody></table>
-<h3 id="输入示例-12"><a href="#输入示例-12" class="headerlink" title="输入示例"></a>输入示例</h3><h4 id="对整个-body-赋初始速度"><a href="#对整个-body-赋初始速度" class="headerlink" title="对整个 body 赋初始速度"></a>对整个 body 赋初始速度</h4><div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">velo</span><br><span class="line">body 1 5.0 0.0 0.0</span><br><span class="line">endv</span><br></pre></td></tr></table></figure></div>
-
-<h4 id="对单个粒子赋初始速度"><a href="#对单个粒子赋初始速度" class="headerlink" title="对单个粒子赋初始速度"></a>对单个粒子赋初始速度</h4><div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">velo</span><br><span class="line">node 10 1.0 0.0 0.0</span><br><span class="line">endv</span><br></pre></td></tr></table></figure></div>
-
-<h4 id="正弦初始速度场"><a href="#正弦初始速度场" class="headerlink" title="正弦初始速度场"></a>正弦初始速度场</h4><div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">velo</span><br><span class="line">ksin 2.0 1</span><br><span class="line">endv</span><br></pre></td></tr></table></figure></div>
-
+</tbody>
+</table>
+<h3 id="输入示例-13">输入示例</h3>
+<h4 id="对整个-body-赋初始速度">对整个 body 赋初始速度</h4>
+<div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">velo</span><br><span class="line">body 1 5.0 0.0 0.0</span><br><span class="line">endv</span><br></pre></td></tr></table></figure></div>
+<h4 id="对单个粒子赋初始速度">对单个粒子赋初始速度</h4>
+<div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">velo</span><br><span class="line">node 10 1.0 0.0 0.0</span><br><span class="line">endv</span><br></pre></td></tr></table></figure></div>
+<h4 id="正弦初始速度场">正弦初始速度场</h4>
+<div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">velo</span><br><span class="line">ksin 2.0 1</span><br><span class="line">endv</span><br></pre></td></tr></table></figure></div>
 <hr>
-<h1 id="10-结束"><a href="#10-结束" class="headerlink" title="10. 结束"></a>10. 结束</h1><h2 id="输入模板-15"><a href="#输入模板-15" class="headerlink" title="输入模板"></a>输入模板</h2><div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">endi</span><br></pre></td></tr></table></figure></div>
-
+<h1>10. 结束</h1>
+<h2 id="输入模板-16">输入模板</h2>
+<div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">endi</span><br></pre></td></tr></table></figure></div>
 <hr>
-<h1 id="非常用关键词"><a href="#非常用关键词" class="headerlink" title="非常用关键词"></a>非常用关键词</h1><blockquote>
+<h1>非常用关键词</h1>
+<blockquote>
 <p>本节主要是关于爆炸的关键词</p>
 </blockquote>
 <table>
@@ -1575,7 +1717,8 @@
 <th>备注</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><code>deto</code></td>
 <td>爆炸起爆点（detonation point）</td>
 <td>用于读取起爆点坐标，通常为 <code>x, y, z</code> 三个分量。</td>
@@ -1593,13 +1736,15 @@
 <tr>
 <td><code>drda</code></td>
 <td>动力松弛阻尼（dynamic relaxation damping）</td>
-<td>用于静力&#x2F;准静态求解的阻尼开关。</td>
+<td>用于静力/准静态求解的阻尼开关。</td>
 </tr>
-</tbody></table>
-<h2 id="输入示例-13"><a href="#输入示例-13" class="headerlink" title="输入示例"></a>输入示例</h2><div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deto 0.5 0.5 0.5</span><br><span class="line">Damp 0.1</span><br><span class="line">drda 0.02</span><br><span class="line">QuLo 0.5</span><br></pre></td></tr></table></figure></div>
-
+</tbody>
+</table>
+<h2 id="输入示例-14">输入示例</h2>
+<div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deto 0.5 0.5 0.5</span><br><span class="line">Damp 0.1</span><br><span class="line">drda 0.02</span><br><span class="line">QuLo 0.5</span><br></pre></td></tr></table></figure></div>
 <hr>
-<h1 id="Update-Keywords（待持续维护）"><a href="#Update-Keywords（待持续维护）" class="headerlink" title="Update Keywords（待持续维护）"></a>Update Keywords（待持续维护）</h1><blockquote>
+<h1>Update Keywords（待持续维护）</h1>
+<blockquote>
 <p>本节用于记录新增或暂未纳入主流程的扩展关键词，便于后续维护。</p>
 </blockquote>
 <table>
@@ -1610,9 +1755,10 @@
 <th>备注</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><code>fbar</code></td>
-<td>F-bar 应力光滑 &#x2F; 体积锁定修正</td>
+<td>F-bar 应力光滑 / 体积锁定修正</td>
 <td>用于缓解体积锁定（volumetric locking）；目前可能仍处于调试或实验阶段。</td>
 </tr>
 <tr>
@@ -1620,25 +1766,34 @@
 <td>完全拉格朗日（Total Lagrangian MPM）</td>
 <td>暂时仅支持 <code>TLmp</code> 单独使用或与 <code>sgmp</code> 联合使用，不能与 <code>gimp</code> 或 <code>bimp</code> 联合使用。</td>
 </tr>
-</tbody></table>
-<h1 id="📌-关键词完整链路（源码对应）"><a href="#📌-关键词完整链路（源码对应）" class="headerlink" title="📌 关键词完整链路（源码对应）"></a>📌 关键词完整链路（源码对应）</h1><div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">输入文件</span><br><span class="line">→ DataIn.f90（解析关键词）</span><br><span class="line">→ 全局变量（Material / Grid / Particle）</span><br><span class="line">→ update_step（时间推进）</span><br><span class="line">→ Constitution（材料/应力更新）</span><br><span class="line">→ DataOut（输出）</span><br></pre></td></tr></table></figure></div>
-
+</tbody>
+</table>
+<h1>📌 关键词完整链路（源码对应）</h1>
+<div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">输入文件</span><br><span class="line">→ DataIn.f90（解析关键词）</span><br><span class="line">→ 全局变量（Material / Grid / Particle）</span><br><span class="line">→ update_step（时间推进）</span><br><span class="line">→ Constitution（材料/应力更新）</span><br><span class="line">→ DataOut（输出）</span><br></pre></td></tr></table></figure></div>
 <hr>
-<h2 id="维护建议"><a href="#维护建议" class="headerlink" title="维护建议"></a>维护建议</h2><p>后续新增内容时，建议遵循以下规则：</p>
+<h2 id="维护建议">维护建议</h2>
+<p>后续新增内容时，建议遵循以下规则：</p>
 <ol>
-<li><p><strong>先在 Quick Index 增加关键词</strong></p>
+<li>
+<p><strong>先在 Quick Index 增加关键词</strong></p>
 </li>
-<li><p><strong>再在对应模块增加详细说明</strong></p>
+<li>
+<p><strong>再在对应模块增加详细说明</strong></p>
 </li>
-<li><p><strong>统一保留</strong></p>
+<li>
+<p><strong>统一保留</strong></p>
 <ul>
-<li><p>输入模板</p>
+<li>
+<p>输入模板</p>
 </li>
-<li><p>输入示例</p>
+<li>
+<p>输入示例</p>
 </li>
-<li><p>关键词表</p>
+<li>
+<p>关键词表</p>
 </li>
-<li><p>必要备注</p>
+<li>
+<p>必要备注</p>
 </li>
 </ul>
 </li>
@@ -1704,9 +1859,9 @@
 			
 			
 			<div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
-				<a class="next" rel="next" href="/shifenglin.io/2026/03/25/dam-break/">
+				<a class="next" rel="next" href="/shifenglin.io/2026/03/25/Model_set_up/">
 					<span class="title flex justify-center items-center">
-						<span class="post-nav-title-item truncate max-w-48">Dam Break</span>
+						<span class="post-nav-title-item truncate max-w-48">📘 Model Setup in MPM3D-F90 (Grid Extension for GIMP/SGMP/B-Spline)</span>
 						<span class="post-nav-item">Next posts</span>
 					</span>
 					<span class="right arrow-icon flex justify-center items-center">
@@ -1790,7 +1945,7 @@
 	<div class="post-toc">
 		<div class="toc-title">On this page</div>
 		<div class="page-title">📘 MPM3D-F90 输入文件说明书</div>
-		<ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-text">前言</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%9B%AE%E7%9A%84"><span class="nav-text">目的</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B3%E9%94%AE%E8%AF%8D%E7%B1%BB%E5%9E%8B"><span class="nav-text">关键词类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AF%B4%E6%98%8E%E6%96%B9%E5%BC%8F"><span class="nav-text">说明方式</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%F0%9F%94%8E-%E5%BF%AB%E9%80%9F%E7%B4%A2%E5%BC%95%EF%BC%88Quick-Index%EF%BC%89"><span class="nav-text">🔎 快速索引（Quick Index）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E5%9F%BA%E6%9C%AC%E6%8E%A7%E5%88%B6"><span class="nav-text">1. 基本控制</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E8%AE%A1%E7%AE%97%E5%9F%9F%E4%B8%8E%E7%BD%91%E6%A0%BC"><span class="nav-text">2. 计算域与网格</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E6%97%B6%E9%97%B4%E6%8E%A7%E5%88%B6"><span class="nav-text">3. 时间控制</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E6%95%B0%E5%80%BC%E6%96%B9%E6%B3%95"><span class="nav-text">4. 数值方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-%E8%BE%93%E5%87%BA%E6%8E%A7%E5%88%B6"><span class="nav-text">5. 输出控制</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-%E8%BE%B9%E7%95%8C%E6%9D%A1%E4%BB%B6"><span class="nav-text">6. 边界条件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-%E6%9D%90%E6%96%99%E4%B8%8E%E6%9C%AC%E6%9E%84"><span class="nav-text">7. 材料与本构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-%E7%8A%B6%E6%80%81%E6%96%B9%E7%A8%8B%EF%BC%88EOS%EF%BC%89"><span class="nav-text">8. 状态方程（EOS）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9-%E7%B2%92%E5%AD%90%E5%AE%9A%E4%B9%89"><span class="nav-text">9. 粒子定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#10-%E5%88%9D%E5%A7%8B%E6%9D%A1%E4%BB%B6%EF%BC%9A%E8%8D%B7%E8%BD%BD"><span class="nav-text">10. 初始条件：荷载</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#11-%E5%88%9D%E5%A7%8B%E6%9D%A1%E4%BB%B6%EF%BC%9A%E9%80%9F%E5%BA%A6"><span class="nav-text">11. 初始条件：速度</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#12-%E6%89%A9%E5%B1%95%E5%85%B3%E9%94%AE%E8%AF%8D"><span class="nav-text">12. 扩展关键词</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#13-%E7%BB%93%E6%9D%9F%E6%A0%87%E5%BF%97"><span class="nav-text">13. 结束标志</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#0-%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84%EF%BC%88%E6%89%A7%E8%A1%8C%E9%A1%BA%E5%BA%8F%EF%BC%89"><span class="nav-text">0. 文件结构（执行顺序）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#1-%E5%9F%BA%E6%9C%AC%E6%8E%A7%E5%88%B6-1"><span class="nav-text">1. 基本控制</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E6%A8%A1%E6%9D%BF"><span class="nav-text">输入模板</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E7%A4%BA%E4%BE%8B"><span class="nav-text">输入示例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B3%E9%94%AE%E8%AF%8D%E8%A1%A8"><span class="nav-text">关键词表</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-%E8%AE%A1%E7%AE%97%E5%9F%9F%E4%B8%8E%E7%BD%91%E6%A0%BC-1"><span class="nav-text">2. 计算域与网格</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E6%A8%A1%E6%9D%BF-1%EF%BC%9A%E5%88%86%E6%96%B9%E5%90%91%E5%AE%9A%E4%B9%89"><span class="nav-text">输入模板 1：分方向定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E7%A4%BA%E4%BE%8B-1"><span class="nav-text">输入示例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E6%A8%A1%E6%9D%BF-2%EF%BC%9A%E6%95%B4%E4%BD%93%E5%AE%9A%E4%B9%89"><span class="nav-text">输入模板 2：整体定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E7%A4%BA%E4%BE%8B-2"><span class="nav-text">输入示例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E6%A8%A1%E6%9D%BF-3%EF%BC%9A%E6%98%BE%E7%A4%BA-%E8%BE%93%E5%87%BA%E7%AD%9B%E9%80%89%E7%AA%97%E5%8F%A3"><span class="nav-text">输入模板 3：显示&#x2F;输出筛选窗口</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E7%A4%BA%E4%BE%8B-3"><span class="nav-text">输入示例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B3%E9%94%AE%E8%AF%8D%E8%A1%A8-1"><span class="nav-text">关键词表</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-%E6%97%B6%E9%97%B4%E6%8E%A7%E5%88%B6-1"><span class="nav-text">3. 时间控制</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E6%A8%A1%E6%9D%BF-1"><span class="nav-text">输入模板</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E7%A4%BA%E4%BE%8B-4"><span class="nav-text">输入示例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B3%E9%94%AE%E8%AF%8D%E8%A1%A8-2"><span class="nav-text">关键词表</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-%E6%95%B0%E5%80%BC%E6%96%B9%E6%B3%95%E9%80%89%E9%A1%B9"><span class="nav-text">4. 数值方法选项</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#4-1-%E6%97%B6%E9%97%B4%E6%8E%A8%E8%BF%9B"><span class="nav-text">4.1 时间推进</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E6%A8%A1%E6%9D%BF-2"><span class="nav-text">输入模板</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B3%E9%94%AE%E8%AF%8D%E8%A1%A8-3"><span class="nav-text">关键词表</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-2-%E5%B9%B3%E6%BB%91"><span class="nav-text">4.2 平滑</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E6%A8%A1%E6%9D%BF-3"><span class="nav-text">输入模板</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AF%B4%E6%98%8E"><span class="nav-text">说明</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-3-%E5%BD%A2%E5%87%BD%E6%95%B0"><span class="nav-text">4.3 形函数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E6%A8%A1%E6%9D%BF-4"><span class="nav-text">输入模板</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AF%B4%E6%98%8E-1"><span class="nav-text">说明</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-4-%E4%BA%BA%E5%B7%A5%E4%BD%93%E9%BB%8F%E6%80%A7"><span class="nav-text">4.4 人工体黏性</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E6%A8%A1%E6%9D%BF-5"><span class="nav-text">输入模板</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E7%A4%BA%E4%BE%8B-5"><span class="nav-text">输入示例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%BA%90%E7%A0%81%E5%AF%B9%E5%BA%94"><span class="nav-text">源码对应</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%86%85%E9%83%A8%E8%AE%A1%E7%AE%97%EF%BC%88Constitution-f90%EF%BC%89"><span class="nav-text">内部计算（Constitution.f90）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AF%B4%E6%98%8E-2"><span class="nav-text">说明</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-5-Jaumann-%E5%BA%94%E5%8A%9B%E7%8E%87"><span class="nav-text">4.5 Jaumann 应力率</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E6%A8%A1%E6%9D%BF-6"><span class="nav-text">输入模板</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AF%B4%E6%98%8E-3"><span class="nav-text">说明</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5-%E8%BE%93%E5%87%BA%E6%8E%A7%E5%88%B6-1"><span class="nav-text">5. 输出控制</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E6%A8%A1%E6%9D%BF-7"><span class="nav-text">输入模板</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E7%A4%BA%E4%BE%8B-6"><span class="nav-text">输入示例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B3%E9%94%AE%E8%AF%8D%E8%A1%A8-4"><span class="nav-text">关键词表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%94%AF%E6%8C%81%E5%8F%98%E9%87%8F%EF%BC%88%E6%9D%A5%E8%87%AA-DataOut%EF%BC%89"><span class="nav-text">支持变量（来自 DataOut）</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#6-%E8%BE%B9%E7%95%8C%E6%9D%A1%E4%BB%B6-1"><span class="nav-text">6. 边界条件</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E6%A8%A1%E6%9D%BF-8"><span class="nav-text">输入模板</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E7%A4%BA%E4%BE%8B-7"><span class="nav-text">输入示例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%B0%E5%80%BC%E5%90%AB%E4%B9%89%E8%A1%A8"><span class="nav-text">数值含义表</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#7-%E6%9D%90%E6%96%99%E5%AE%9A%E4%B9%89"><span class="nav-text">7. 材料定义</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#7-1-%E5%9F%BA%E6%9C%AC%E6%A0%BC%E5%BC%8F"><span class="nav-text">7.1 基本格式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E6%A8%A1%E6%9D%BF-9"><span class="nav-text">输入模板</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E7%A4%BA%E4%BE%8B-8"><span class="nav-text">输入示例</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-2-%E6%9D%90%E6%96%99%E7%B1%BB%E5%9E%8B"><span class="nav-text">7.2 材料类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-3-%E7%8A%B6%E6%80%81%E6%96%B9%E7%A8%8B%EF%BC%88EOS%EF%BC%89"><span class="nav-text">7.3 状态方程（EOS）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E6%A8%A1%E6%9D%BF-10"><span class="nav-text">输入模板</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B3%E9%94%AE%E8%AF%8D%E8%A1%A8-5"><span class="nav-text">关键词表</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#8-%E7%B2%92%E5%AD%90%E5%AE%9A%E4%B9%89"><span class="nav-text">8. 粒子定义</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#8-1-%E5%9D%97%E5%AE%9A%E4%B9%89"><span class="nav-text">8.1 块定义</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E6%A8%A1%E6%9D%BF-11"><span class="nav-text">输入模板</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E7%A4%BA%E4%BE%8B-9"><span class="nav-text">输入示例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%82%E6%95%B0%E8%A1%A8"><span class="nav-text">参数表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A4%87%E6%B3%A8"><span class="nav-text">备注</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-2-%E5%A4%96%E9%83%A8%E7%94%9F%E6%88%90%E7%B2%92%E5%AD%90"><span class="nav-text">8.2 外部生成粒子</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AF%B4%E6%98%8E-4"><span class="nav-text">说明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E6%A8%A1%E6%9D%BF-12"><span class="nav-text">输入模板</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E7%A4%BA%E4%BE%8B-10"><span class="nav-text">输入示例</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#9-%E5%88%9D%E5%A7%8B%E6%9D%A1%E4%BB%B6"><span class="nav-text">9. 初始条件</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#9-1-%E5%A4%96%E5%8A%9B"><span class="nav-text">9.1 外力</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E6%A8%A1%E6%9D%BF-13"><span class="nav-text">输入模板</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B3%E9%94%AE%E8%AF%8D%E8%A1%A8-6"><span class="nav-text">关键词表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E7%A4%BA%E4%BE%8B-11"><span class="nav-text">输入示例</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9-2-%E5%88%9D%E5%A7%8B%E9%80%9F%E5%BA%A6"><span class="nav-text">9.2 初始速度</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E6%A8%A1%E6%9D%BF-14"><span class="nav-text">输入模板</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B3%E9%94%AE%E8%AF%8D%E8%A1%A8-7"><span class="nav-text">关键词表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E7%A4%BA%E4%BE%8B-12"><span class="nav-text">输入示例</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#10-%E7%BB%93%E6%9D%9F"><span class="nav-text">10. 结束</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E6%A8%A1%E6%9D%BF-15"><span class="nav-text">输入模板</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%9D%9E%E5%B8%B8%E7%94%A8%E5%85%B3%E9%94%AE%E8%AF%8D"><span class="nav-text">非常用关键词</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E7%A4%BA%E4%BE%8B-13"><span class="nav-text">输入示例</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Update-Keywords%EF%BC%88%E5%BE%85%E6%8C%81%E7%BB%AD%E7%BB%B4%E6%8A%A4%EF%BC%89"><span class="nav-text">Update Keywords（待持续维护）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%F0%9F%93%8C-%E5%85%B3%E9%94%AE%E8%AF%8D%E5%AE%8C%E6%95%B4%E9%93%BE%E8%B7%AF%EF%BC%88%E6%BA%90%E7%A0%81%E5%AF%B9%E5%BA%94%EF%BC%89"><span class="nav-text">📌 关键词完整链路（源码对应）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BB%B4%E6%8A%A4%E5%BB%BA%E8%AE%AE"><span class="nav-text">维护建议</span></a></li></ol></li></ol>
+		<ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-text">前言</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%9B%AE%E7%9A%84"><span class="nav-text">目的</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B3%E9%94%AE%E8%AF%8D%E7%B1%BB%E5%9E%8B"><span class="nav-text">关键词类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AF%B4%E6%98%8E%E6%96%B9%E5%BC%8F"><span class="nav-text">说明方式</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-text">🔎 快速索引（Quick Index）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E5%9F%BA%E6%9C%AC%E6%8E%A7%E5%88%B6"><span class="nav-text">1. 基本控制</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E8%AE%A1%E7%AE%97%E5%9F%9F%E4%B8%8E%E7%BD%91%E6%A0%BC"><span class="nav-text">2. 计算域与网格</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E6%97%B6%E9%97%B4%E6%8E%A7%E5%88%B6"><span class="nav-text">3. 时间控制</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E6%95%B0%E5%80%BC%E6%96%B9%E6%B3%95"><span class="nav-text">4. 数值方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-%E8%BE%93%E5%87%BA%E6%8E%A7%E5%88%B6"><span class="nav-text">5. 输出控制</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-%E8%BE%B9%E7%95%8C%E6%9D%A1%E4%BB%B6"><span class="nav-text">6. 边界条件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-%E6%9D%90%E6%96%99%E4%B8%8E%E6%9C%AC%E6%9E%84"><span class="nav-text">7. 材料与本构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-%E7%8A%B6%E6%80%81%E6%96%B9%E7%A8%8B%EF%BC%88EOS%EF%BC%89"><span class="nav-text">8. 状态方程（EOS）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9-%E7%B2%92%E5%AD%90%E5%AE%9A%E4%B9%89"><span class="nav-text">9. 粒子定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#10-%E5%88%9D%E5%A7%8B%E6%9D%A1%E4%BB%B6%EF%BC%9A%E8%8D%B7%E8%BD%BD"><span class="nav-text">10. 初始条件：荷载</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#11-%E5%88%9D%E5%A7%8B%E6%9D%A1%E4%BB%B6%EF%BC%9A%E9%80%9F%E5%BA%A6"><span class="nav-text">11. 初始条件：速度</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#12-%E6%89%A9%E5%B1%95%E5%85%B3%E9%94%AE%E8%AF%8D"><span class="nav-text">12. 扩展关键词</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#13-%E7%BB%93%E6%9D%9F%E6%A0%87%E5%BF%97"><span class="nav-text">13. 结束标志</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-text">0. 文件结构（执行顺序）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-text">1. 基本控制</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E6%A8%A1%E6%9D%BF"><span class="nav-text">输入模板</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E7%A4%BA%E4%BE%8B"><span class="nav-text">输入示例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B3%E9%94%AE%E8%AF%8D%E8%A1%A8"><span class="nav-text">关键词表</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-text">2. 计算域与网格</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E6%A8%A1%E6%9D%BF-1%EF%BC%9A%E5%88%86%E6%96%B9%E5%90%91%E5%AE%9A%E4%B9%89"><span class="nav-text">输入模板 1：分方向定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E7%A4%BA%E4%BE%8B-2"><span class="nav-text">输入示例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E6%A8%A1%E6%9D%BF-2%EF%BC%9A%E6%95%B4%E4%BD%93%E5%AE%9A%E4%B9%89"><span class="nav-text">输入模板 2：整体定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E7%A4%BA%E4%BE%8B-3"><span class="nav-text">输入示例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E6%A8%A1%E6%9D%BF-3%EF%BC%9A%E6%98%BE%E7%A4%BA-%E8%BE%93%E5%87%BA%E7%AD%9B%E9%80%89%E7%AA%97%E5%8F%A3"><span class="nav-text">输入模板 3：显示&#x2F;输出筛选窗口</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E7%A4%BA%E4%BE%8B-4"><span class="nav-text">输入示例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B3%E9%94%AE%E8%AF%8D%E8%A1%A8-2"><span class="nav-text">关键词表</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-text">3. 时间控制</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E6%A8%A1%E6%9D%BF-2"><span class="nav-text">输入模板</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E7%A4%BA%E4%BE%8B-5"><span class="nav-text">输入示例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B3%E9%94%AE%E8%AF%8D%E8%A1%A8-3"><span class="nav-text">关键词表</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-text">4. 数值方法选项</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#4-1-%E6%97%B6%E9%97%B4%E6%8E%A8%E8%BF%9B"><span class="nav-text">4.1 时间推进</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E6%A8%A1%E6%9D%BF-3"><span class="nav-text">输入模板</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B3%E9%94%AE%E8%AF%8D%E8%A1%A8-4"><span class="nav-text">关键词表</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-2-%E5%B9%B3%E6%BB%91"><span class="nav-text">4.2 平滑</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E6%A8%A1%E6%9D%BF-4"><span class="nav-text">输入模板</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AF%B4%E6%98%8E"><span class="nav-text">说明</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-3-%E5%BD%A2%E5%87%BD%E6%95%B0"><span class="nav-text">4.3 形函数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E6%A8%A1%E6%9D%BF-5"><span class="nav-text">输入模板</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AF%B4%E6%98%8E-2"><span class="nav-text">说明</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-4-%E4%BA%BA%E5%B7%A5%E4%BD%93%E9%BB%8F%E6%80%A7"><span class="nav-text">4.4 人工体黏性</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E6%A8%A1%E6%9D%BF-6"><span class="nav-text">输入模板</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E7%A4%BA%E4%BE%8B-6"><span class="nav-text">输入示例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%BA%90%E7%A0%81%E5%AF%B9%E5%BA%94"><span class="nav-text">源码对应</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%86%85%E9%83%A8%E8%AE%A1%E7%AE%97%EF%BC%88Constitution-f90%EF%BC%89"><span class="nav-text">内部计算（Constitution.f90）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AF%B4%E6%98%8E-3"><span class="nav-text">说明</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-5-Jaumann-%E5%BA%94%E5%8A%9B%E7%8E%87"><span class="nav-text">4.5 Jaumann 应力率</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E6%A8%A1%E6%9D%BF-7"><span class="nav-text">输入模板</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AF%B4%E6%98%8E-4"><span class="nav-text">说明</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-text">5. 输出控制</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E6%A8%A1%E6%9D%BF-8"><span class="nav-text">输入模板</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E7%A4%BA%E4%BE%8B-7"><span class="nav-text">输入示例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B3%E9%94%AE%E8%AF%8D%E8%A1%A8-5"><span class="nav-text">关键词表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%94%AF%E6%8C%81%E5%8F%98%E9%87%8F%EF%BC%88%E6%9D%A5%E8%87%AA-DataOut%EF%BC%89"><span class="nav-text">支持变量（来自 DataOut）</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-text">6. 边界条件</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E6%A8%A1%E6%9D%BF-9"><span class="nav-text">输入模板</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E7%A4%BA%E4%BE%8B-8"><span class="nav-text">输入示例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%B0%E5%80%BC%E5%90%AB%E4%B9%89%E8%A1%A8"><span class="nav-text">数值含义表</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-text">7. 材料定义</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#7-1-%E5%9F%BA%E6%9C%AC%E6%A0%BC%E5%BC%8F"><span class="nav-text">7.1 基本格式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E6%A8%A1%E6%9D%BF-10"><span class="nav-text">输入模板</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E7%A4%BA%E4%BE%8B-9"><span class="nav-text">输入示例</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-2-%E6%9D%90%E6%96%99%E7%B1%BB%E5%9E%8B"><span class="nav-text">7.2 材料类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-3-%E7%8A%B6%E6%80%81%E6%96%B9%E7%A8%8B%EF%BC%88EOS%EF%BC%89"><span class="nav-text">7.3 状态方程（EOS）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E6%A8%A1%E6%9D%BF-11"><span class="nav-text">输入模板</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B3%E9%94%AE%E8%AF%8D%E8%A1%A8-6"><span class="nav-text">关键词表</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-text">8. 粒子定义</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#8-1-%E5%9D%97%E5%AE%9A%E4%B9%89"><span class="nav-text">8.1 块定义</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E6%A8%A1%E6%9D%BF-12"><span class="nav-text">输入模板</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E7%A4%BA%E4%BE%8B-10"><span class="nav-text">输入示例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%82%E6%95%B0%E8%A1%A8"><span class="nav-text">参数表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A4%87%E6%B3%A8"><span class="nav-text">备注</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-2-%E5%A4%96%E9%83%A8%E7%94%9F%E6%88%90%E7%B2%92%E5%AD%90"><span class="nav-text">8.2 外部生成粒子</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AF%B4%E6%98%8E-5"><span class="nav-text">说明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E6%A8%A1%E6%9D%BF-13"><span class="nav-text">输入模板</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E7%A4%BA%E4%BE%8B-11"><span class="nav-text">输入示例</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-text">9. 初始条件</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#9-1-%E5%A4%96%E5%8A%9B"><span class="nav-text">9.1 外力</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E6%A8%A1%E6%9D%BF-14"><span class="nav-text">输入模板</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B3%E9%94%AE%E8%AF%8D%E8%A1%A8-7"><span class="nav-text">关键词表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E7%A4%BA%E4%BE%8B-12"><span class="nav-text">输入示例</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9-2-%E5%88%9D%E5%A7%8B%E9%80%9F%E5%BA%A6"><span class="nav-text">9.2 初始速度</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E6%A8%A1%E6%9D%BF-15"><span class="nav-text">输入模板</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B3%E9%94%AE%E8%AF%8D%E8%A1%A8-8"><span class="nav-text">关键词表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E7%A4%BA%E4%BE%8B-13"><span class="nav-text">输入示例</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-text">10. 结束</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E6%A8%A1%E6%9D%BF-16"><span class="nav-text">输入模板</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-text">非常用关键词</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E7%A4%BA%E4%BE%8B-14"><span class="nav-text">输入示例</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-text">Update Keywords（待持续维护）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-text">📌 关键词完整链路（源码对应）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BB%B4%E6%8A%A4%E5%BB%BA%E8%AE%AE"><span class="nav-text">维护建议</span></a></li></ol></li></ol>
 
 	</div>
 </div>
@@ -1818,7 +1973,7 @@
                 
                 <p class="post-count space-x-0.5">
                     <span>
-                        3 posts in total
+                        5 posts in total
                     </span>
                     
                 </p>

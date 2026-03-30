@@ -78,7 +78,7 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="https://shifenglin-chd.github.io/shifenglin.io/"/>
+    <link rel="canonical" href="https://shifenglin-chd.github.io/shifenglin.io/2026/03/25/model_set_up/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
@@ -86,14 +86,18 @@
     
         
         <meta name="description" content="Hexo Theme Redefine, Redefine Your Hexo Journey.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Shifeng Lin">
-<meta property="og:url" content="https://shifenglin-chd.github.io/shifenglin.io/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="📘 Model Setup in MPM3D-F90 (Grid Extension for GIMP&#x2F;SGMP&#x2F;B-Spline)">
+<meta property="og:url" content="https://shifenglin-chd.github.io/shifenglin.io/2026/03/25/Model_set_up/index.html">
 <meta property="og:site_name" content="Shifeng Lin">
 <meta property="og:description" content="Hexo Theme Redefine, Redefine Your Hexo Journey.">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://shifenglin-chd.github.io/images/redefine-og.webp">
+<meta property="article:published_time" content="2026-03-25T05:56:29.000Z">
+<meta property="article:modified_time" content="2026-03-28T10:13:53.828Z">
 <meta property="article:author" content="Shifeng Lin">
+<meta property="article:tag" content="MPM">
+<meta property="article:tag" content="Numerical simulation">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://shifenglin-chd.github.io/images/redefine-og.webp">
     
@@ -107,7 +111,7 @@
     
     <title>
         
-            Shifeng Lin - Personal page
+            📘 Model Setup in MPM3D-F90 (Grid Extension for GIMP/SGMP/B-Spline) | Shifeng Lin
         
     </title>
 
@@ -209,99 +213,17 @@
 <main class="page-container" id="swup">
 
 	
-	
-    <style>
-        .home-banner-container {
-            background: none !important;
-        }
-        .home-article-item,
-        .sidebar-links,
-        .sidebar-content,
-        a.page-number,
-        a.extend,
-        .sidebar-links .links:hover,
-        .right-bottom-tools,
-        footer.footer {
-            background-color: var(--background-color-transparent-80) !important;
-        }
-        .right-bottom-tools:hover,
-        a.page-number:hover,
-        a.extend:hover {
-            background-color: var(--primary-color) !important;
-        }
-        .site-info,
-        .home-article-sticky-label {
-            background-color: var(--background-color-transparent-15) !important;
-        }
-        .home-article-sticky-label {
-            backdrop-filter: none !important;
-        }
-    </style>
-    <div class="home-banner-background transition-fade fixed top-0 left-0 w-screen h-screen scale-125 sm:scale-110 box-border will-change-transform bg-cover">
-        <img src="/shifenglin.io/images/landslide_mpm.gif" alt="home-banner-background" class="w-full h-full object-cover dark:hidden">
-        <img src="/shifenglin.io/images/landslide_mpm.gif" alt="home-banner-background" class="w-full h-full object-cover hidden dark:block">
-    </div>
-
-
-<div class="home-banner-container flex justify-center items-center transition-fade relative">
-    
-    <div class="content mt-8 flex flex-col justify-center items-center transition-fade-down">
-        <div class="description flex flex-col justify-center items-center w-screen font-medium text-center"
-        
-        >
-            Shifeng Lin
-            
-            
-            
-            
-            
-                <p><i id="subtitle"></i></p>
-            
-        </div>
-        
-    </div>
-    <style>
-        /* Mobile-specific QR code styles */
-        .qr-toggle-item.qr-active .qr-popup {
-            visibility: visible !important;
-            opacity: 1 !important;
-            transform: translateY(0) !important;
-        }
-        
-        /* Prevent button from staying in focus/hover state on mobile */
-        @media (hover: none) and (pointer: coarse) {
-            .qr-toggle-item:focus,
-            .qr-toggle-item:hover {
-                background-color: transparent;
-            }
-            
-            .qr-toggle-item .qr-trigger:focus,
-            .qr-toggle-item .qr-trigger:hover {
-                background-color: transparent;
-                color: inherit;
-            }
-            
-            /* Only show active state when explicitly toggled */
-            .qr-popup {
-                visibility: hidden !important;
-                opacity: 0 !important;
-            }
-        }
-    </style>
-</div>
-
-	
 
 	<div class="main-content-container flex flex-col justify-between min-h-dvh">
 		<div class="main-content-header">
 			<header class="navbar-container px-6 md:px-12">
-    <div class="navbar-content transition-navbar has-home-banner">
+    <div class="navbar-content transition-navbar ">
         <div class="left">
             
             <a class="logo-title" href="/shifenglin.io/">
-                <h1>
+                
                 Shifeng Lin
-                </h1>
+                
             </a>
         </div>
 
@@ -315,7 +237,7 @@
 
                             <li class="navbar-item">
                                 <!-- Menu -->
-                                <a class="active"
+                                <a class=""
                                    href="/shifenglin.io/"
                                         >
                                     <i class="fa-regular fa-house fa-fw"></i>
@@ -434,7 +356,7 @@
 
                     <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
                         
-                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full active"
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
                            href="/shifenglin.io/"
                         >
                             <span>
@@ -579,460 +501,341 @@
 
 		<div class="main-content-body transition-fade-up">
 			
-			<div class="home-sidebar-container">
-    <div class="sticky-container sticky">
-        
-        
-            
-            <div class="sidebar-content" >
-                <div class="avatar flex justify-center">
-    <img src="/shifenglin.io/images/redefine-avatar.svg">
-</div>
-                <div class="author flex flex-col justify-center my-2.5 mx-0">
-    <div class="name">Shifeng Lin</div>
-    
-        <div class="label">Lv1</div>
-    
-</div>
-                <div class="statistics flex justify-around my-2.5">
-    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/shifenglin.io/tags">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">9</div>
-        <div class="label text-third-text-color text-sm">Tags</div>
-    </a>
-    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/shifenglin.io/categories">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">2</div>
-        <div class="label text-third-text-color text-sm">Categories</div>
-    </a>
-    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/shifenglin.io/archives">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">5</div>
-        <div class="label text-third-text-color text-sm">Posts</div>
-    </a>
-</div>
-            </div>
-        
-
-    </div>
-</div>
-
-			
 
 			<div class="main-content">
-				<div class="home-content-container">
-    <ul class="home-article-list">
-        
-            <li class="home-article-item">
+				<div class="post-page-container flex relative justify-between box-border w-full h-full">
+	<div class="article-content-container">
 
-                
+		<div class="article-title relative w-full">
+			
+			<div class="w-full flex items-center pt-6 justify-start">
+				<h1 class="article-title-regular text-second-text-color tracking-tight text-4xl md:text-6xl font-semibold px-2 sm:px-6 md:px-8 py-3">📘 Model Setup in MPM3D-F90 (Grid Extension for GIMP/SGMP/B-Spline)</h1>
+			</div>
+			
+		</div>
 
-                
-
-                
-                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
-                    <h3 class="home-article-title">
-                        <a href="/shifenglin.io/2026/03/26/MPM3D-F90%E8%BE%93%E5%85%A5%E6%96%87%E4%BB%B6%E8%AF%B4%E6%98%8E/">
-                            📘 MPM3D-F90 输入文件说明书
-                        </a>
-                    </h3>
-
-                    <div class="home-article-content markdown-body">
-                        
-                            
-                            
-前言
-目的
-
-
-用于查询 MPM3D-F90 输入文件关键词
-
-
-作为后续新增关键词与使用说明的统一记录入口
-
-
-quick index 和 detail message
-
-
-关键词类型
-输入关键词可按形式分为三类：
-
-
-开关型：无参数
-例如：smoo
-
-
-单参数型：一个参数
-例如：dtscale 0.8
-
-
-多参数型：多个参数
-例如：spx 0 10
-
-
-说明方式
-每一部分均尽量保持统一...
-                        
-                    </div>
-
-                    <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Thu Mar 26 2026 09:00:00 GMT+0800">
-                
-                    2026-03-26
-                
-            </span>
+		
+		<div class="article-header flex flex-row gap-2 items-center px-2 sm:px-6 md:px-8">
+			<div class="avatar w-[46px] h-[46px] shrink-0 rounded-medium border border-border-color p-px">
+				<img src="/shifenglin.io/images/redefine-avatar.svg">
+			</div>
+			<div class="info flex flex-col justify-between">
+				<div class="author flex items-center">
+					<span class="name text-default-text-color text-lg font-semibold">Shifeng Lin</span>
+					
+					<span class="author-label ml-1.5 text-xs px-2 py-0.5 rounded-small text-third-text-color border border-shadow-color-1">Lv1</span>
+					
+				</div>
+				<div class="meta-info">
+					<div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
+        <span class="desktop">2026-03-25 13:56:29</span>
+        <span class="mobile">2026-03-25 13:56:29</span>
+        <span class="hover-info">Created</span>
+    </span>
+    
+        <span class="article-date article-meta-item">
+            <i class="fa-regular fa-wrench"></i>&nbsp;
+            <span class="desktop">2026-03-28 18:13:53</span>
+            <span class="mobile">2026-03-28 18:13:53</span>
+            <span class="hover-info">Updated</span>
         </span>
-        
-            <span class="home-article-category">
-                <i class="fa-solid fa-folders"></i>&nbsp;
+    
+
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fa-regular fa-tags"></i>&nbsp;
             <ul>
                 
+                    <li>
+                        <a href="/shifenglin.io/tags/MPM/">MPM</a>&nbsp;
+                    </li>
                 
-                    
-                        
-                        <li>
-                            <a href="/shifenglin.io/categories/Study-notes/">Study notes</a>&nbsp;
-                        </li>
-                    
-                    
+                    <li>
+                        | <a href="/shifenglin.io/tags/Numerical-simulation/">Numerical simulation</a>&nbsp;
+                    </li>
                 
             </ul>
         </span>
-        
-        
-            <span class="home-article-tag">
-                <i class="fa-solid fa-tags"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/shifenglin.io/tags/MPM/">MPM</a>&nbsp;
-                        </li>
-                    
-                        <li>
-                            | 
-                            <a href="/shifenglin.io/tags/Numerical-Simulation/">Numerical Simulation</a>&nbsp;
-                        </li>
-                    
-                        <li>
-                            | 
-                            <a href="/shifenglin.io/tags/%E8%BE%93%E5%85%A5%E6%96%87%E4%BB%B6/">输入文件</a>&nbsp;
-                        </li>
-                    
-                </ul>
-            </span>
-        
-    </div>
+    
 
-    <a href="/shifenglin.io/2026/03/26/MPM3D-F90%E8%BE%93%E5%85%A5%E6%96%87%E4%BB%B6%E8%AF%B4%E6%98%8E/">Read more<span class="seo-reader-text">📘 MPM3D-F90 输入文件说明书</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+    
+    
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fa-regular fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
+    
 </div>
 
-                </div>
+				</div>
+			</div>
+		</div>
+		
+
+		
+
+
+		<div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
+			<blockquote>
+<p>Based on the open-source MPM3D-F90 developed by Zhang et al. [1]</p>
+</blockquote>
+<hr>
+<h2 id="🎯-Core-Issue">🎯 Core Issue</h2>
+<p>When using different interpolation schemes in MPM, the <strong>required grid extent is different</strong>.</p>
+<div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Standard MPM     → no extra grid needed  </span><br><span class="line">GIMP / SGMP / B-Spline → extra grid layer required</span><br></pre></td></tr></table></figure></div>
+<hr>
+<h2 id="🧠-Why-Does-This-Happen">🧠 Why Does This Happen?</h2>
+<h3 id="🔹-Standard-MPM">🔹 Standard MPM</h3>
+<ul>
+<li>Shape function support is <strong>local (1 cell)</strong></li>
+<li>Particle interacts only with <strong>adjacent nodes</strong></li>
+<li>No need for additional grid outside the physical domain</li>
+</ul>
+<hr>
+<h3 id="🔹-GIMP-SGMP-B-Spline">🔹 GIMP / SGMP / B-Spline</h3>
+<ul>
+<li>Shape function support is <strong>wider (≥ 2 cells)</strong></li>
+<li>Particle influences nodes <strong>beyond immediate cell</strong></li>
+<li>Near boundaries → support domain is truncated</li>
+</ul>
+<p>👉 Therefore:</p>
+<div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Extra grid layers are required to maintain full support</span><br></pre></td></tr></table></figure></div>
+<hr>
+<h2 id="⚙️-Practical-Rule-Most-Important">⚙️ Practical Rule (Most Important)</h2>
+<div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Standard MPM      → grid = physical domain  </span><br><span class="line">GIMP / SGMP / B-spline → grid = physical domain + 1 layer (each side)</span><br></pre></td></tr></table></figure></div>
+<hr>
+<h2 id="📦-Example-5-×-5-×-1-Domain">📦 Example: 5 × 5 × 1 Domain</h2>
+<hr>
+<h3 id="✅-Standard-MPM">✅ Standard MPM</h3>
+<div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">spx 0 5</span><br><span class="line">spy 0 5</span><br><span class="line">spz 0 1</span><br><span class="line">dcell 1</span><br></pre></td></tr></table></figure></div>
+<p>✔ Grid matches physical domain exactly<br>
+✔ No extension required</p>
+<hr>
+<h3 id="🔥-GIMP-SGMP-B-Spline">🔥 GIMP / SGMP / B-Spline</h3>
+<div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">spx -1 6</span><br><span class="line">spy -1 6</span><br><span class="line">spz 0 1</span><br><span class="line">dcell 1</span><br></pre></td></tr></table></figure></div>
+<p>✔ Extended by <strong>1 cell on each side</strong><br>
+✔ Ensures full support of shape functions</p>
+<hr>
+<h2 id="⚠️-Important-Notes">⚠️ Important Notes</h2>
+<h3 id="1️⃣-This-code-already-handles-boundary-nodes">1️⃣ This code already handles boundary nodes</h3>
+<p>MPM3D-F90 internally:</p>
+<div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Standard MPM → fixes 1 layer of nodes  </span><br><span class="line">GIMP/SGMP/B-spline → fixes 2 layers of nodes  </span><br></pre></td></tr></table></figure></div>
+<p>BUT:</p>
+<div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">It does NOT automatically extend the computational domain</span><br></pre></td></tr></table></figure></div>
+<hr>
+<h3 id="2️⃣-Why-extension-is-still-necessary">2️⃣ Why extension is still necessary</h3>
+<p>Even though boundary nodes are handled:</p>
+<ul>
+<li>Particle support domain may extend outside grid</li>
+<li>Leads to:
+<ul>
+<li>loss of accuracy</li>
+<li>instability</li>
+<li>boundary artifacts</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="3️⃣-Recommended-practice">3️⃣ Recommended practice</h3>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Grid extension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Standard MPM</td>
+<td>0 layer</td>
+</tr>
+<tr>
+<td>GIMP</td>
+<td>+1 layer</td>
+</tr>
+<tr>
+<td>SGMP</td>
+<td>+1~2 layers</td>
+</tr>
+<tr>
+<td>B-Spline</td>
+<td>+1~2 layers</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="🎯-Key-Takeaway">🎯 Key Takeaway</h2>
+<div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Grid extension is NOT optional for GIMP/SGMP/B-spline  </span><br><span class="line">It is required for numerical stability and accuracy</span><br></pre></td></tr></table></figure></div>
+<hr>
+<h2 id="📚-References">📚 References</h2>
+<p>[1] Zhang, X., et al.<br>
+MPM3D-F90: A 3D Material Point Method code in Fortran.<br>
+Available at: <a class="link"   target="_blank" rel="noopener" href="https://github.com/xzhang66/MPM3D-F90" >https://github.com/xzhang66/MPM3D-F90<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
+
+		</div>
+
+		
+		<div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
+			<div class="article-copyright-info-container">
+    <ul>
+        <li><strong>Title:</strong> 📘 Model Setup in MPM3D-F90 (Grid Extension for GIMP/SGMP/B-Spline)</li>
+        <li><strong>Author:</strong> Shifeng Lin</li>
+        <li><strong>Created at
+                :</strong> 2026-03-25 13:56:29</li>
+        
+            <li>
+                <strong>Updated at
+                    :</strong> 2026-03-28 18:13:53
             </li>
         
-            <li class="home-article-item">
+        <li>
+            <strong>Link:</strong> https://redefine.ohevan.com/2026/03/25/Model_set_up/
+        </li>
+        <li>
+            <strong>
+                License:
+            </strong>
+            
 
-                
-
-                
-
-                
-                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
-                    <h3 class="home-article-title">
-                        <a href="/shifenglin.io/2026/03/25/Model_set_up/">
-                            📘 Model Setup in MPM3D-F90 (Grid Extension for GIMP/SGMP/B-Spline)
-                        </a>
-                    </h3>
-
-                    <div class="home-article-content markdown-body">
-                        
-                            
-                            
-Based on the open-source MPM3D-F90 developed by Zhang et al. [1]
-
-
-🎯 Core Issue
-When using different interpolation schemes in MPM, the required grid extent is different.
-12Standard MPM     → no e...
-                        
-                    </div>
-
-                    <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Wed Mar 25 2026 13:56:29 GMT+0800">
-                
-                    2026-03-25
-                
-            </span>
-        </span>
-        
-        
-            <span class="home-article-tag">
-                <i class="fa-solid fa-tags"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/shifenglin.io/tags/MPM/">MPM</a>&nbsp;
-                        </li>
-                    
-                        <li>
-                            | 
-                            <a href="/shifenglin.io/tags/Numerical-simulation/">Numerical simulation</a>&nbsp;
-                        </li>
-                    
-                </ul>
-            </span>
-        
-    </div>
-
-    <a href="/shifenglin.io/2026/03/25/Model_set_up/">Read more<span class="seo-reader-text">📘 Model Setup in MPM3D-F90 (Grid Extension for GIMP/SGMP/B-Spline)</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                
-                    
-                
-
-                
-                    <div id="home-article-thumbnail" class="home-article-thumbnail relative h-[150px] overflow-hidden rounded-t-large">
-                        <a href="/shifenglin.io/2026/03/25/dam-break/">
-                            <img src="/shifenglin.io/images/Dam_Break.jpg" alt="Dam Break" class="w-full h-full object-cover dark:brightness-75 transition-all" />
-                        </a>
-                    </div>
-                
-                <div class="flex flex-col gap-5 px-7 pb-7 pt-5">
-                    <h3 class="home-article-title">
-                        <a href="/shifenglin.io/2026/03/25/dam-break/">
-                            Dam Break
-                        </a>
-                    </h3>
-
-                    <div class="home-article-content markdown-body">
-                        
-                            
-                            The simulations in this study are conducted using the open-source MPM3D-F90 code developed by Zhang et al. [3].
-1. Problem description
-Dam-break is a classical benchmark for transient free-surface ...
-                        
-                    </div>
-
-                    <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Wed Mar 25 2026 13:56:29 GMT+0800">
-                
-                    2026-03-25
-                
-            </span>
-        </span>
-        
-        
-            <span class="home-article-tag">
-                <i class="fa-solid fa-tags"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/shifenglin.io/tags/MPM/">MPM</a>&nbsp;
-                        </li>
-                    
-                        <li>
-                            | 
-                            <a href="/shifenglin.io/tags/Numerical-simulation/">Numerical simulation</a>&nbsp;
-                        </li>
-                    
-                        <li>
-                            | 
-                            <a href="/shifenglin.io/tags/Dam-break/">Dam-break</a>&nbsp;
-                        </li>
-                    
-                </ul>
-            </span>
-        
-    </div>
-
-    <a href="/shifenglin.io/2026/03/25/dam-break/">Read more<span class="seo-reader-text">Dam Break</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                
-                    
-                
-
-                
-                    <div id="home-article-thumbnail" class="home-article-thumbnail relative h-[150px] overflow-hidden rounded-t-large">
-                        <a href="/shifenglin.io/2026/03/25/dam_break_with_a_rigid_wall/">
-                            <img src="/shifenglin.io/images/Dam_Break.jpg" alt="Dam break with a rigid wall" class="w-full h-full object-cover dark:brightness-75 transition-all" />
-                        </a>
-                    </div>
-                
-                <div class="flex flex-col gap-5 px-7 pb-7 pt-5">
-                    <h3 class="home-article-title">
-                        <a href="/shifenglin.io/2026/03/25/dam_break_with_a_rigid_wall/">
-                            Dam break with a rigid wall
-                        </a>
-                    </h3>
-
-                    <div class="home-article-content markdown-body">
-                        
-                            
-                            The simulations in this study are conducted using the open-source MPM3D-F90 code developed by Zhang et al. [3].
-1. Problem description
-Dam-break is a classical benchmark for transient free-surface ...
-                        
-                    </div>
-
-                    <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Wed Mar 25 2026 13:56:29 GMT+0800">
-                
-                    2026-03-25
-                
-            </span>
-        </span>
-        
-        
-            <span class="home-article-tag">
-                <i class="fa-solid fa-tags"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/shifenglin.io/tags/MPM/">MPM</a>&nbsp;
-                        </li>
-                    
-                        <li>
-                            | 
-                            <a href="/shifenglin.io/tags/Numerical-simulation/">Numerical simulation</a>&nbsp;
-                        </li>
-                    
-                        <li>
-                            | 
-                            <a href="/shifenglin.io/tags/Dam-break/">Dam-break</a>&nbsp;
-                        </li>
-                    
-                </ul>
-            </span>
-        
-    </div>
-
-    <a href="/shifenglin.io/2026/03/25/dam_break_with_a_rigid_wall/">Read more<span class="seo-reader-text">Dam break with a rigid wall</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                
-                    
-                
-
-                
-                    <div id="home-article-thumbnail" class="home-article-thumbnail relative h-[150px] overflow-hidden rounded-t-large">
-                        <a href="/shifenglin.io/2025/08/23/ISGdR-2025-Youth-Forum-Presentation/">
-                            <img src="/shifenglin.io/images/isgdr2025-presentation.jpg" alt="Presentation at ISGdR 2025 Youth Forum" class="w-full h-full object-cover dark:brightness-75 transition-all" />
-                        </a>
-                    </div>
-                
-                <div class="flex flex-col gap-5 px-7 pb-7 pt-5">
-                    <h3 class="home-article-title">
-                        <a href="/shifenglin.io/2025/08/23/ISGdR-2025-Youth-Forum-Presentation/">
-                            Presentation at ISGdR 2025 Youth Forum
-                        </a>
-                    </h3>
-
-                    <div class="home-article-content markdown-body">
-                        
-                            
-                            🎤 Conference Overview
-I presented my research at the Youth Forum of the 23rd International Symposium on Geo-disaster Reduction (ISGdR 2025) held in Yibin, Sichuan, China.
-
-International Consortium...
-                        
-                    </div>
-
-                    <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Sat Aug 23 2025 09:00:00 GMT+0800">
-                
-                    2025-08-23
-                
-            </span>
-        </span>
-        
-            <span class="home-article-category">
-                <i class="fa-solid fa-folders"></i>&nbsp;
-            <ul>
-                
-                
-                    
-                        
-                        <li>
-                            <a href="/shifenglin.io/categories/Conference/">Conference</a>&nbsp;
-                        </li>
-                    
-                    
-                
-            </ul>
-        </span>
-        
-        
-            <span class="home-article-tag">
-                <i class="fa-solid fa-tags"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/shifenglin.io/tags/Landslide/">Landslide</a>&nbsp;
-                        </li>
-                    
-                        <li>
-                            | 
-                            <a href="/shifenglin.io/tags/MPM/">MPM</a>&nbsp;
-                        </li>
-                    
-                        <li>
-                            | 
-                            <a href="/shifenglin.io/tags/Numerical-Simulation/">Numerical Simulation</a>&nbsp;
-                        </li>
-                    
-                </ul>
-            </span>
-        
-    </div>
-
-    <a href="/shifenglin.io/2025/08/23/ISGdR-2025-Youth-Forum-Presentation/">Read more<span class="seo-reader-text">Presentation at ISGdR 2025 Youth Forum</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
-
-                </div>
-            </li>
-        
+            
+                This work is licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0">CC BY-NC-SA 4.0</a>.
+            
+        </li>
     </ul>
-
-    <div class="home-paginator px-7 py-5">
-        <div class="paginator">
-	<span class="page-number current">1</span>
 </div>
-  
+
+		</div>
+		
+
+		
+		<ul class="post-tags-box text-lg mt-1.5 flex-wrap justify-center flex md:hidden">
+			
+			<li class="tag-item mx-0.5">
+				<a href="/shifenglin.io/tags/MPM/">#MPM</a>&nbsp;
+			</li>
+			
+			<li class="tag-item mx-0.5">
+				<a href="/shifenglin.io/tags/Numerical-simulation/">#Numerical simulation</a>&nbsp;
+			</li>
+			
+		</ul>
+		
+
+		
+
+		
+		<div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
+			
+			<div class="article-prev border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+				<a class="prev" rel="prev" href="/shifenglin.io/2026/03/26/MPM3D-F90%E8%BE%93%E5%85%A5%E6%96%87%E4%BB%B6%E8%AF%B4%E6%98%8E/">
+					<span class="left arrow-icon flex justify-center items-center">
+						<i class="fa-solid fa-chevron-left"></i>
+					</span>
+					<span class="title flex justify-center items-center">
+						<span class="post-nav-title-item truncate max-w-48">📘 MPM3D-F90 输入文件说明书</span>
+						<span class="post-nav-item">Prev posts</span>
+					</span>
+				</a>
+			</div>
+			
+			
+			<div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+				<a class="next" rel="next" href="/shifenglin.io/2026/03/25/dam-break/">
+					<span class="title flex justify-center items-center">
+						<span class="post-nav-title-item truncate max-w-48">Dam Break</span>
+						<span class="post-nav-item">Next posts</span>
+					</span>
+					<span class="right arrow-icon flex justify-center items-center">
+						<i class="fa-solid fa-chevron-right"></i>
+					</span>
+				</a>
+			</div>
+			
+		</div>
+		
+
+
+		
+		<div class="comment-container px-2 sm:px-6 md:px-8 pb-8">
+			<div class="comments-container mt-10 w-full ">
+    <div id="comment-anchor" class="w-full h-2.5"></div>
+    <div class="comment-area-title w-full my-1.5 md:my-2.5 text-xl md:text-3xl font-bold">
+        Comments
     </div>
+    
+
+        
+            
+    <div id="waline"></div>
+    <script type="module" data-swup-reload-script>
+      import { init } from '/shifenglin.io/js/libs/waline.js';
+
+      (function() {
+        const startPath = location.pathname;
+        const startTime = Date.now();
+        const retryDelay = 200;
+        const retryLimit = 5000;
+
+        const runWaline = () => {
+          if (location.pathname !== startPath) {
+            return;
+          }
+
+          const container = document.getElementById('waline');
+          if (!container) {
+            if (Date.now() - startTime < retryLimit) {
+              setTimeout(runWaline, retryDelay);
+            }
+            return;
+          }
+
+          if (window.redefineWalineInstance?.destroy) {
+            window.redefineWalineInstance.destroy();
+          }
+
+          container.innerHTML = '';
+          window.redefineWalineInstance = init({
+            el: '#waline',
+            serverURL: 'https://example.example.com',
+            path: location.pathname,
+            dark: 'body[class~="dark-mode"]',
+            reaction: false,
+            requiredMeta: ['nick', 'mail'],
+            emoji: [],
+                      lang: 'zh-CN',
+          });
+        };
+
+        runWaline();
+      })();
+    </script>
+
+
+
+        
+    
+</div>
+
+		</div>
+		
+	</div>
+
+	
+	<div class="toc-content-container">
+		<div class="post-toc-wrap">
+	<div class="post-toc">
+		<div class="toc-title">On this page</div>
+		<div class="page-title">📘 Model Setup in MPM3D-F90 (Grid Extension for GIMP/SGMP/B-Spline)</div>
+		<ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%8E%AF-Core-Issue"><span class="nav-text">🎯 Core Issue</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%A7%A0-Why-Does-This-Happen"><span class="nav-text">🧠 Why Does This Happen?</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%F0%9F%94%B9-Standard-MPM"><span class="nav-text">🔹 Standard MPM</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%F0%9F%94%B9-GIMP-SGMP-B-Spline"><span class="nav-text">🔹 GIMP &#x2F; SGMP &#x2F; B-Spline</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E2%9A%99%EF%B8%8F-Practical-Rule-Most-Important"><span class="nav-text">⚙️ Practical Rule (Most Important)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%93%A6-Example-5-%C3%97-5-%C3%97-1-Domain"><span class="nav-text">📦 Example: 5 × 5 × 1 Domain</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E2%9C%85-Standard-MPM"><span class="nav-text">✅ Standard MPM</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%F0%9F%94%A5-GIMP-SGMP-B-Spline"><span class="nav-text">🔥 GIMP &#x2F; SGMP &#x2F; B-Spline</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E2%9A%A0%EF%B8%8F-Important-Notes"><span class="nav-text">⚠️ Important Notes</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1%EF%B8%8F%E2%83%A3-This-code-already-handles-boundary-nodes"><span class="nav-text">1️⃣ This code already handles boundary nodes</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2%EF%B8%8F%E2%83%A3-Why-extension-is-still-necessary"><span class="nav-text">2️⃣ Why extension is still necessary</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3%EF%B8%8F%E2%83%A3-Recommended-practice"><span class="nav-text">3️⃣ Recommended practice</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%8E%AF-Key-Takeaway"><span class="nav-text">🎯 Key Takeaway</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%93%9A-References"><span class="nav-text">📚 References</span></a></li></ol>
+
+	</div>
+</div>
+	</div>
+	
 </div>
 
 			</div>
@@ -1117,6 +920,26 @@ International Consortium...
 		</div>
 	</div>
 
+	
+	<div class="post-tools">
+		<div class="post-tools-container">
+	<ul class="article-tools-list">
+		<!-- TOC aside toggle -->
+		
+		<li class="right-bottom-tools page-aside-toggle">
+			<i class="fa-regular fa-outdent"></i>
+		</li>
+		
+
+		<!-- go comment -->
+		
+		<li class="go-comment">
+			<i class="fa-regular fa-comments"></i>
+		</li>
+		
+	</ul>
+</div>
+	</div>
 	
 
 	<div class="right-side-tools-container">
