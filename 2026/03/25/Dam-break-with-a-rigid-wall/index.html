@@ -78,7 +78,7 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="https://shifenglin-chd.github.io/shifenglin.io/2026/03/25/dam_break_with_a_rigid_wall/"/>
+    <link rel="canonical" href="https://shifenglin-chd.github.io/shifenglin.io/2026/03/25/dam-break-with-a-rigid-wall/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
@@ -88,13 +88,13 @@
         <meta name="description" content="Hexo Theme Redefine, Redefine Your Hexo Journey.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Dam break with a rigid wall">
-<meta property="og:url" content="https://shifenglin-chd.github.io/shifenglin.io/2026/03/25/dam_break_with_a_rigid_wall/index.html">
+<meta property="og:url" content="https://shifenglin-chd.github.io/shifenglin.io/2026/03/25/Dam-break-with-a-rigid-wall/index.html">
 <meta property="og:site_name" content="Shifeng Lin">
 <meta property="og:description" content="Hexo Theme Redefine, Redefine Your Hexo Journey.">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://shifenglin-chd.github.io/images/redefine-og.webp">
 <meta property="article:published_time" content="2026-03-25T05:56:29.000Z">
-<meta property="article:modified_time" content="2026-03-28T11:37:12.409Z">
+<meta property="article:modified_time" content="2026-04-04T04:01:19.352Z">
 <meta property="article:author" content="Shifeng Lin">
 <meta property="article:tag" content="Dam-break">
 <meta property="article:tag" content="MPM">
@@ -512,7 +512,7 @@
 			
 			
 			
-			<img src="/shifenglin.io/images/Dam_Break.jpg" alt="Dam break with a rigid wall" class="w-full h-60 sm:h-72 md:h-80 object-cover sm:rounded-t-large dark:brightness-75" />
+			<img src="/shifenglin.io/images/Dam_Break_with_a_rigid_wall.jpg" alt="Dam break with a rigid wall" class="w-full h-60 sm:h-72 md:h-80 object-cover sm:rounded-t-large dark:brightness-75" />
 			
 			<div class="w-full flex items-center absolute bottom-0 justify-start">
 				<h1 class="article-title-cover text-center mx-6 my-6 text-second-text-color bg-background-color-transparent px-4 py-3 text-3xl sm:text-4xl md:text-5xl font-semibold backdrop-blur-lg rounded-xl border border-border-color ">Dam break with a rigid wall</h1>
@@ -543,8 +543,8 @@
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2026-03-28 19:37:12</span>
-            <span class="mobile">2026-03-28 19:37:12</span>
+            <span class="desktop">2026-04-04 12:01:19</span>
+            <span class="mobile">2026-04-04 12:01:19</span>
             <span class="hover-info">Updated</span>
         </span>
     
@@ -596,11 +596,11 @@
 		<div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
 			<p>The simulations in this study are conducted using the open-source MPM3D-F90 code developed by Zhang et al. [3].</p>
 <h1>1. Problem description</h1>
-<p>Dam-break is a classical benchmark for transient free-surface flow.<br>
-A rectangular water column collapses under gravity and spreads horizontally.</p>
-<p>The process includes:</p>
-<div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Initial column → Collapse → Spreading → Deposition</span><br></pre></td></tr></table></figure></div>
-
+<p>To simulate the impact of water column on a rigid wall presents greater challenge compared to cases without wall. The water pressure tends to become unstable and induces significant oscillation upon impact.</p>
+<blockquote>
+<p>Initial configuration of dam break with a rigid wall simulation: (a) L/l0 =1.5; (b) L/l0 =2.7.</p>
+</blockquote>
+<img lazyload src="/images/loading.svg" data-src="/shifenglin.io/2026/03/25/Dam-break-with-a-rigid-wall/Dam_Break_with_a_rigid_wall.jpg" class title="Configuration">
 <h1>2. Governing equations</h1>
 <h2 id="2-1-Momentum-conservation-MPM-framework">2.1 Momentum conservation (MPM framework)</h2>
 <p>The motion of a continuum satisfies:</p>
@@ -637,15 +637,19 @@ A rectangular water column collapses under gravity and spreads horizontally.</p>
 </ul>
 <p>This formulation approximates incompressible flow using a weakly compressible model.</p>
 <h1>3. Numerical simulation</h1>
-<h2 id="Case-I-Dam-break-MPM-vs-SGMP">Case I: Dam-break (MPM vs SGMP)</h2>
-<p>This case is used to compare the standard MPM and the SGMP formulation.</p>
+<h2 id="Case-I-L-l0-1-5">Case I: L/l0=1.5</h2>
 <h3 id="Geometry">Geometry</h3>
-<div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Domain: 4.125 × 2.125 × 0.125 m</span><br><span class="line">Initial column: 1.0 × 2.0 m</span><br></pre></td></tr></table></figure></div>
+<div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Initial column: 4 × 2.0 × 0.1 m</span><br></pre></td></tr></table></figure></div>
 <h3 id="Discretization">Discretization</h3>
-<ul>
-<li>particle spacing: 0.025 m</li>
-<li>particles: 40 × 80 × 1</li>
-</ul>
+<p>the physical domain is discretized into quadrilateral elements, each with a size of 0.1m, and particle per cell is 4, yielding a total of 3200 material points, consistent with the configuration presented by Zhao et al.,2023.</p>
+<blockquote>
+<p>Computational domain</p>
+</blockquote>
+<div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">spx   0 6.0</span><br><span class="line">spy   0 6.0</span><br><span class="line">spz   0 0.1</span><br><span class="line">dcell  0.1</span><br></pre></td></tr></table></figure></div>
+<blockquote>
+<p>generating particles through key word “particle block”</p>
+</blockquote>
+<div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Particle block 1 </span><br><span class="line">! matid density dp    0x 0y 0z      nx   ny  nz</span><br><span class="line">    1   997.5   0.05  0  0  0.025   80   40   1</span><br></pre></td></tr></table></figure></div>
 <h3 id="Material-parameters">Material parameters</h3>
 <ul>
 <li>$\rho = 997.5\ \mathrm{kg/m^3}$</li>
@@ -653,63 +657,75 @@ A rectangular water column collapses under gravity and spreads horizontally.</p>
 <li>$\mu = 0.001\ \mathrm{Pa \cdot s}$</li>
 </ul>
 <h3 id="Boundary-condition">Boundary condition</h3>
-<div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fixed 2 0 2 0 2 2</span><br></pre></td></tr></table></figure></div>
+<div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">!  x0 xn y0 yn z0 zn</span><br><span class="line">fixed 2 2 2 0 2 2</span><br></pre></td></tr></table></figure></div>
 <p>This corresponds to slip boundaries and a free surface.</p>
 <h3 id="Loading">Loading</h3>
 <p>$$ \mathbf{b} = (0, -9.81, 0) $$</p>
-<h3 id="Flow-evolution-MPM-vs-SGMP">Flow evolution (MPM vs SGMP)</h3>
-<h4 id="MPM-Dam-break">MPM - Dam break :</h4>
-
-<h4 id="SGMP-Dam-break">SGMP - Dam break :</h4>
-
-<p>The standard MPM shows noticeable numerical oscillations near the free surface.<br>
-By contrast, SGMP produces a smoother pressure field and a more stable interface evolution.<br>
-Although the overall flow patterns remain consistent, the SGMP formulation significantly improves numerical smoothness.</p>
-<h2 id="Case-II-Benchmark">Case II: Benchmark</h2>
-<p>This case is used for comparison with the benchmark results reported in the literature, focusing on the evolution of runout and height.</p>
-<h3 id="Aspect-ratios">Aspect ratios</h3>
-<ul>
-<li>$H/L = 2$</li>
-<li>$H/L = 1$</li>
-</ul>
-<h3 id="Parameters">Parameters</h3>
-<ul>
-<li>$\rho = 1000\ \mathrm{kg/m^3}$</li>
-<li>$K = 20\ \mathrm{MPa}$</li>
-<li>$\mu = 0.001$</li>
-<li>$g = 9.81$</li>
-</ul>
-<h3 id="Normalized-quantities">Normalized quantities</h3>
-<ul>
-<li>runout: $L(t)/L_0$</li>
-<li>height: $H(t)/H_0$</li>
-</ul>
-<h3 id="Simulation-result">Simulation result</h3>
-<h4 id="Pressure">Pressure</h4>
+<h3 id="Pressure-field">Pressure field</h3>
 <blockquote>
-<p>Pressure contours throughout the computation: (a) aspect ratio of 1.0; (b) aspect ratio of 2.0.</p>
+<p>Comparison between pressure field</p>
 </blockquote>
-
-<h4 id="Aspect-ratio-1-animation">Aspect ratio 1 animation</h4>
-
-<h4 id="Aspect-ratio-2-animation">Aspect ratio 2 animation</h4>
-
-<h4 id="Runout-and-height-comparison-with-the-benchmark">Runout and height (comparison with the benchmark)</h4>
+<img lazyload src="/images/loading.svg" data-src="/shifenglin.io/2026/03/25/Dam-break-with-a-rigid-wall/Dam_break_with_a_rigid_wall.png" class title="pressure field">
+<ul>
+<li>despite sgmp simulate the water behavior better than mpm, the pressure occur significant oscillation.</li>
+<li>particle collocation we can see</li>
+<li>free surface pressure not be zero</li>
+</ul>
 <blockquote>
-<p>Comparison with previous work: (a) normalized run out length of aspect ratio of 1.0; (b) normalized run out height of aspect ratio of 1.0; © normalized run out length of aspect ratio of 2.0; (d) normalized run out height of aspect ratio of 2.0.</p>
+<p>Other studies</p>
 </blockquote>
-
-<p>The numerical results agree well with the reference trends.<br>
-For $H/L = 2$, the collapse is dominated by vertical motion in the early stage.<br>
-For $H/L = 1$, horizontal spreading becomes more pronounced.<br>
-The normalized runout and height curves show good agreement with previous studies, indicating that the model captures the essential flow dynamics correctly.</p>
+<p>Pressure field simulated by (a) Zhao et al. 2023 and (b) Cheng et al. 2026</p>
+<img lazyload src="/images/loading.svg" data-src="/shifenglin.io/2026/03/25/Dam-break-with-a-rigid-wall/other_study.png" class>
+<h2 id="Case-II-L-l0-2-7">Case II: L/l0 = 2.7</h2>
+<h3 id="Geometry-2">Geometry</h3>
+<div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Initial column: 1.2 × 0.6 × 0.1 m</span><br></pre></td></tr></table></figure></div>
+<h3 id="Discretization-2">Discretization</h3>
+<p>the physical domain is discretized into quadrilateral elements, each with a size of 0.1m, and particle per cell is 4, yielding a total of 3200 material points, consistent with the configuration presented by Zhao et al.,2023.</p>
+<blockquote>
+<p>Computational domain</p>
+</blockquote>
+<div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">spx   -0.01 3.23</span><br><span class="line">spy   -0.01 3.23</span><br><span class="line">spz   0 0.01</span><br><span class="line">dcell  0.01</span><br><span class="line">! Attention</span><br><span class="line">! here add one more layer grid when sgmp/gimp/bimp on</span><br></pre></td></tr></table></figure></div>
+<blockquote>
+<p>generating particles through key word “particle block”</p>
+</blockquote>
+<div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Particle block 1 </span><br><span class="line">! matid density dp    0x 0y 0z      nx   ny  nz</span><br><span class="line">    1  997.5  0.005   0  0  0.0025  240  120  1</span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
+<h3 id="Material-parameters-2">Material parameters</h3>
+<ul>
+<li>$\rho = 997.5\ \mathrm{kg/m^3}$</li>
+<li>$K = 2.0 \times 10^9\ \mathrm{Pa}$</li>
+<li>$\mu = 0.001\ \mathrm{Pa \cdot s}$</li>
+</ul>
+<div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">material</span><br><span class="line">!  num     mtype  density   BulkModulus  miu</span><br><span class="line">    1       null  997.5      2.0e9     0.001</span><br><span class="line">seos 1 4 141.5 ! select equation of static</span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
+<h3 id="Boundary-condition-2">Boundary condition</h3>
+<div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">!  x0 xn y0 yn z0 zn</span><br><span class="line">fixed 2 2 2 0 2 2</span><br></pre></td></tr></table></figure></div>
+<p>This corresponds to slip boundaries and a free surface.</p>
+<h3 id="Loading-2">Loading</h3>
+<p>$$ \mathbf{b} = (0, -9.81, 0) $$</p>
+<h3 id="Pressure-field-2">Pressure field</h3>
+<blockquote>
+<p>Comparison between pressure field</p>
+</blockquote>
+<img lazyload src="/images/loading.svg" data-src="/shifenglin.io/2026/03/25/Dam-break-with-a-rigid-wall/with_wall_pressure.png" class>
+<ul>
+<li>despite sgmp simulate the water behavior better than mpm, the pressure occur significant oscillation.</li>
+<li>particle collocation we can see</li>
+<li>free surface pressure not be zero</li>
+</ul>
+<blockquote>
+<p>Other studies</p>
+</blockquote>
+<p>Pressure field simulated by (a) Zhao et al. 2023 and (b) Cheng et al. 2026</p>
+<img lazyload src="/images/loading.svg" data-src="/shifenglin.io/2026/03/25/Dam-break-with-a-rigid-wall/others.png" class>
 <h1>References</h1>
 <p>[1] Cheng, X., Zhang, X., et al. (2026).<br>
 Stabilized explicit material point method for fluid flow and fluid–structure interaction simulations using dual high-order B-spline volume averaging.<br>
 <em>Computer Methods in Applied Mechanics and Engineering</em>, 448, 118428.</p>
 <p>[2] Zhang, X., et al.<br>
 MPM3D-F90: A 3D Material Point Method code in Fortran.<br>
-Available at: <a class="link"   target="_blank" rel="noopener" href="https://github.com/xzhang66/MPM3D-F90" >https://github.com/xzhang66/MPM3D-F90<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
+Available at: <a class="link" target="_blank" rel="noopener" href="https://github.com/xzhang66/MPM3D-F90">https://github.com/xzhang66/MPM3D-F90<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
+<p>[3] Zhao, Y., Jiang, C., Choo, J., 2023. Circumventing volumetric locking in explicit material point methods: A simple, efficient, and general approach. Numerical Meth Engineering 124, 5334–5355. <a class="link" target="_blank" rel="noopener" href="https://doi.org/10.1002/nme.7347">https://doi.org/10.1002/nme.7347<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
+<p>[4] R.M. Telikicherla, G. Moutsanidis, A Displacement-based Material Point Method for Weakly Compressible Free-surface Flows, Comput. Mech. 2024, pp. 1–17.</p>
+<p>[5] Z.-P. Chen, X. Zhang, K.Y. Sze, L. Kan, X.-M. Qiu, Vp material point method for weakly compressible problems, Comput. Fluids, 176 (2018) 170–181.</p>
 
 		</div>
 
@@ -724,11 +740,11 @@ Available at: <a class="link"   target="_blank" rel="noopener" href="https://git
         
             <li>
                 <strong>Updated at
-                    :</strong> 2026-03-28 19:37:12
+                    :</strong> 2026-04-04 12:01:19
             </li>
         
         <li>
-            <strong>Link:</strong> https://redefine.ohevan.com/2026/03/25/dam_break_with_a_rigid_wall/
+            <strong>Link:</strong> https://redefine.ohevan.com/2026/03/25/Dam-break-with-a-rigid-wall/
         </li>
         <li>
             <strong>
@@ -774,12 +790,12 @@ Available at: <a class="link"   target="_blank" rel="noopener" href="https://git
 		<div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
 			
 			<div class="article-prev border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
-				<a class="prev" rel="prev" href="/shifenglin.io/2026/03/25/dam-break/">
+				<a class="prev" rel="prev" href="/shifenglin.io/2026/03/25/Model_set_up/">
 					<span class="left arrow-icon flex justify-center items-center">
 						<i class="fa-solid fa-chevron-left"></i>
 					</span>
 					<span class="title flex justify-center items-center">
-						<span class="post-nav-title-item truncate max-w-48">Dam Break</span>
+						<span class="post-nav-title-item truncate max-w-48">📘 Model Setup in MPM3D-F90 (Grid Extension for GIMP/SGMP/B-Spline)</span>
 						<span class="post-nav-item">Prev posts</span>
 					</span>
 				</a>
@@ -787,9 +803,9 @@ Available at: <a class="link"   target="_blank" rel="noopener" href="https://git
 			
 			
 			<div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
-				<a class="next" rel="next" href="/shifenglin.io/2025/08/23/ISGdR-2025-Youth-Forum-Presentation/">
+				<a class="next" rel="next" href="/shifenglin.io/2026/03/25/dam-break/">
 					<span class="title flex justify-center items-center">
-						<span class="post-nav-title-item truncate max-w-48">Presentation at ISGdR 2025 Youth Forum</span>
+						<span class="post-nav-title-item truncate max-w-48">Dam Break</span>
 						<span class="post-nav-item">Next posts</span>
 					</span>
 					<span class="right arrow-icon flex justify-center items-center">
@@ -873,7 +889,7 @@ Available at: <a class="link"   target="_blank" rel="noopener" href="https://git
 	<div class="post-toc">
 		<div class="toc-title">On this page</div>
 		<div class="page-title">Dam break with a rigid wall</div>
-		<ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-text">1. Problem description</span></a></li><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-text">2. Governing equations</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2-1-Momentum-conservation-MPM-framework"><span class="nav-text">2.1 Momentum conservation (MPM framework)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-2-Stress-decomposition-Newtonian-fluid"><span class="nav-text">2.2 Stress decomposition (Newtonian fluid)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-3-Viscous-constitutive-relation"><span class="nav-text">2.3 Viscous constitutive relation</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-4-Equation-of-state-weakly-compressible-fluid"><span class="nav-text">2.4 Equation of state (weakly compressible fluid)</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-text">3. Numerical simulation</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Case-I-Dam-break-MPM-vs-SGMP"><span class="nav-text">Case I: Dam-break (MPM vs SGMP)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Geometry"><span class="nav-text">Geometry</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Discretization"><span class="nav-text">Discretization</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Material-parameters"><span class="nav-text">Material parameters</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Boundary-condition"><span class="nav-text">Boundary condition</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Loading"><span class="nav-text">Loading</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Flow-evolution-MPM-vs-SGMP"><span class="nav-text">Flow evolution (MPM vs SGMP)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Case-II-Benchmark"><span class="nav-text">Case II: Benchmark</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Aspect-ratios"><span class="nav-text">Aspect ratios</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Parameters"><span class="nav-text">Parameters</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Normalized-quantities"><span class="nav-text">Normalized quantities</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Simulation-result"><span class="nav-text">Simulation result</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-text">References</span></a></li></ol>
+		<ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-text">1. Problem description</span></a></li><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-text">2. Governing equations</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2-1-Momentum-conservation-MPM-framework"><span class="nav-text">2.1 Momentum conservation (MPM framework)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-2-Stress-decomposition-Newtonian-fluid"><span class="nav-text">2.2 Stress decomposition (Newtonian fluid)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-3-Viscous-constitutive-relation"><span class="nav-text">2.3 Viscous constitutive relation</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-4-Equation-of-state-weakly-compressible-fluid"><span class="nav-text">2.4 Equation of state (weakly compressible fluid)</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-text">3. Numerical simulation</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Case-I-L-l0-1-5"><span class="nav-text">Case I: L&#x2F;l0&#x3D;1.5</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Geometry"><span class="nav-text">Geometry</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Discretization"><span class="nav-text">Discretization</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Material-parameters"><span class="nav-text">Material parameters</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Boundary-condition"><span class="nav-text">Boundary condition</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Loading"><span class="nav-text">Loading</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Pressure-field"><span class="nav-text">Pressure field</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Case-II-L-l0-2-7"><span class="nav-text">Case II: L&#x2F;l0 &#x3D; 2.7</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Geometry-2"><span class="nav-text">Geometry</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Discretization-2"><span class="nav-text">Discretization</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Material-parameters-2"><span class="nav-text">Material parameters</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Boundary-condition-2"><span class="nav-text">Boundary condition</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Loading-2"><span class="nav-text">Loading</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Pressure-field-2"><span class="nav-text">Pressure field</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-text">References</span></a></li></ol>
 
 	</div>
 </div>
